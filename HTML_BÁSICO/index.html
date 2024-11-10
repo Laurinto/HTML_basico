@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>HTML Básico</title>
+        <meta name="description" content="Bases para el entendimiento básico de HTML, CSS y JavaScript">
+        <meta property="og:title" content="HTML, CSS y JavaSript Básico">
+
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" type="image/png" href="">
+
+    </head>
+    <body>
+        <section class="title">
+            <p>Proyecto Realizado por Laura.U, Ian y Coral</p>
+            <h1>HTML BÁSICO</h1>
+            <h2>HTML, CSS y JS</h2>
+        </section>
+
+        <aside>
+            <hr>
+            <header><h2>Índice</h2></header>
+            <nav>
+                <p><a  href="#sec1">01. Etiquetas principales</a></p>
+                <p><a href="#sec2">02. Estructura del HTML</a></p>
+                <p><a href="#sec3">03. Insertar enlaces</a></p>
+                <p><a href="#sec4">04. Listas ordenadas y desordenadas</a></p>
+                <p><a href="#sec5">Insertar videos de youtube</a></p>
+                <p><a href="#sec6">05. Summary + Details</a></p>
+                <p><a href="#sec7">06. Creación del archivo y enlace de CSS</a></p>
+                <p><a href="#sec8">07. clases y formato</a></p>
+                <p><a href="#sec9">08. Fondos y colores</a></p>
+                <p><a href="#sec10">09. Fuentes para el texto</a></p>
+                <p><a href="#sec11">10. box model</a></p>
+                <p><a href="#sec12">11. Posiciones</a></p>
+                <p><a href="#sec13">12. figuras geometricas</a></p>
+            </nav>
+            <hr>
+        </aside>
+    
+        <section id="sec1">
+            <h2>Etiquetas principales</h2>
+            <article>
+                <h4>Cabecera HTML5 y su estructura</h4>
+            </article>
+            <article>
+                <h4>Etiquetas basicas del HTML</h4>
+            </article>
+            <article>
+                <h4>Etiquetas para crear tablas</h4>
+            </article>
+        </section>
+
+        <section id="sec2">
+            <h2>Estructura del HTML</h2>
+            <p>La estructura en HTML es bastante importante para mantener un orden y para que tanto nosotros como los demás puedan saber en qué parte del código estamos.</p>
+            <p>Aunque no sea obligatorio, pues hay páginas que usan muchos &lt;div&gt; o &lt;span&gt; para estructurar las páginas, el abuso de estos pueden dar a un código sucio y desordenado que para algunos podría llegar a ser ilegible, y por ello es mejor usar estas etiquetas sintácticas.</p>
+            <p>Las etiquetas sintácticas para estructurar el HTML son:</p>
+            <article class="nncc">
+                <p><clp>&lt;main&gt;</clp> → Establece el <clb>contenido principal</clb> de esa página en concreto y es la que indicará el contenido cambiante en función de la web.</p>
+                <p><clp>&lt;section&gt;</clp> → Contiene una <clb>sección</clb> del contenido de la web</p>
+                <p><clp>&lt;article&gt;</clp> → Contiene una <clb>información concreta de una sección</clb>, que tenga elementos replicables de forma independiente.</p>
+                <p><clp>&lt;aside&gt;</clp> → Se utiliza para <clb>información que NO resulta de gran importancia</clb>, pero que igualmente se añade al tener relación con la información principal.</p><br>
+                <p><clp>&lt;header&gt;</clp> → Ahí es donde se encuentra el <clb>título</clb> de una sección, artículo, etc.</p>
+                <p><clp>&lt;nav&gt;</clp> → Se utiliza para separar un <clb>conjunto de enlaces</clb>.</p>
+                <p><clp>&lt;figure&gt;</clp> → Se usa para elementos como <clb>imágenes o videos</clb> que son <clb>independientes de otros elementos</clb> de la página.</p>
+                <p><clp>&lt;blockquote&gt;</clp> → Para añadir <clb>citas</clb> en bloques.</p>
+                <p><clp>&lt;pre&gt;</clp> → Para crear bloques dedicados a <clb>mostrar código</clb>.</p>
+            </article>
+
+            <details>
+                <summary>Ejemplo visual</summary>
+                <img src="estructura-html.png">imagen provisional</img>
+            </details>
+            </section>
+
+            <section id="sec3">
+                <h2 id="enl">Insertar enlaces</h2>
+                <p>Sintaxis: <clp>&lt;a</clp> <a>href="URL"</a>&gt;Contenido del enlace<clp>&lt;/a&gt;</clp></p>
+                <p>Esta sintaxis <clb>crea un enlace</clb>, pero poco sirve si no tiene nada que enlazar, por lo que <clb>tiene que venir acompañado del atributo</clb> <a>href</a>.</p>
+
+                <p>La URL dependerá de lo que queramos poner y a donde lo queremos dirigir.</p>
+
+                <h4>Ejemplos:</h4>
+
+                <p><clp>&lt;a</clp> <a>href="http://www.manualweb.net"</a><clp>&gt;</clp>Enlace a una web<clp>&lt;/a&gt;</clp>
+                    <br>Enlace que redirige a otra <a href="https://developer.mozilla.org/es/">página externa</a></p>
+                
+                <p><clp>&lt;a</clp> <a>href="documento.html"</a><clp>&gt;</clp>Enlace a un documento<clp>&lt;/a&gt;</clp><br>Se <a href="pdf-de-la-web.pdf">añade un documento</a> con el mismo nombre en el que pondremos href y podremos acceder a él por un elace</p>
+                
+                <p><clp>&lt;a</clp> <a>href="miimagen.png"</a><clp>&gt;</clp>Enlace a una imagen<clp>&lt;/a&gt;</clp><br><a href="imagen-de-la-web.png">Ver una imagen</a> en el html y que esta te lleve a un enlace</p>
+
+                <p><clp>&lt;a</clp> <a>href="mimusica.mp3"</a><clp>&gt;</clp>Enlace a un audio<clp>&lt;/a&gt;</clp><br>Enlace a un archivo de sonido</p>
+
+                <p><clp>&lt;a</clp> <a>href="documento.html#loquesea"</a><clp>&gt;</clp>Enlace a una parte de un documento<clp>&lt;/a&gt;</clp><br>En este tipo de enlaces en los que se <a>usa # para enlazar</a> ese elemento <a href="#enl">con otra parte de la página</a>, <a>añadiremos a la etiqueta</a> en la que queremos redirigir <a>&lt;id=”...”./a&gt;</a> Este parámetro hace que pueda ser identificado por otras etiquetas siempre que estas quieran hacer referencia a este, por lo que a la hora de presionar el link, redirige a esa parte de la web en la que se encuentra el id.</p>
+                <div class="ex-with-html">
+                    <h5>HTML</h5>
+                    <pre>
+&lt;header&gt;
+    &lt;a href="#manolo"&gt;Texto hacia Manolo&lt;/a&gt;
+&lt;/header&gt;
+
+&lt;article&gt;Hola, soy Juan&lt;/article&gt;
+
+&lt;article id="manolo"&gt;Hola, soy Manolo&lt;/article&gt;
+
+                    </pre>
+                    <h5>Muestra</h5>
+                    <iframe src="" frameborder="0"></iframe>
+                </div>
+        </section>
+        
+        <section id="sec4">
+            <header><h2>Listas ordenadas &lt;ol&gt; y desordenadas &lt;ul&gt;</h2></header>
+            <p>La etiqueta <clp>&lt;ul&gt;</clp> es un elemento de bloque utilizado para definir <clb>listas desordenadas</clb> (aquellas en las que el orden de los elementos no es relevante) <clb>mostradas con puntos</clb> a su izquierda, y la etiqueta <clp>&lt;ol&gt;</clp> es uno que define <clb>listas ordenadas</clb>, <clb>enumeradas</clb> del uno hasta el número de elementos que hayan.</p>
+            <p><clb>Los elementos</clb> en ambos tipos de la lista <clb>se definen con</clb> el elemento <clp>&lt;li&gt;</clp>.</p>
+            <p>El elemento ul puede anidarse dentro de otro elemento ul para crear listas multinivel. Además, puede combinarse con el elemento ol para crear listas ordenadas y desordenadas mixtas.</p>
+            <div class="ex-with-html">
+                <h5>HTML</h5>
+                <pre>
+&lt;ol&gt;
+    &lt;li&gt;Texto 1&lt;/li&gt;
+    &lt;li&gt;Texto 2&lt;/li&gt;
+    &lt;ul&gt;
+        &lt;li&gt;Texto 1&lt;/li&gt;
+        &lt;li&gt;Texto 2&lt;/li&gt;
+        &lt;li&gt;Texto 3&lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;li&gt;Texto 3&lt;/li&gt;
+&lt;/ol&gt;
+                </pre>
+                <h5>Muestra</h5>
+                <iframe src="" frameborder="0"></iframe>
+            </div>
+            </section>
+        <section id="sec5">
+            <header><h2>Insertar videos de youtube mediante &lt;iframe&gt;</h2></header>
+            <p>1. Busca el video que te interesa poner en tu HTML y <clb>busca la sección "compartir"</clb> que hay debajo del título del video.</p>
+            <img src="IMAGES/ifrma-dm.png">
+            <p>2. <clb>Selecciona el apartado de "Insertar"</clb> para ver el iframe con la URL del video específico.</p>
+            <img src="IMAGES/ifrmb-dm.png">
+            <p>3. <clb>Copia el código destacado</clb> que se muestra en la imagen, es lo esencial que hace que se pueda mostrar el iframe en la web.</p>
+            <img src="IMAGES/ifrmc-dm.png">
+        </section>
+        <section id="sec5"><h2>&lt;summary&gt; + &lt;details&gt;</h2>
+            <p>Se usa para <clb>crear secciones en las que al dar clic en el título <clp>&lt;summary&gt;</clp> de la sección, la información</clb> que se encontraba oculta, <clb>se muestra</clb>.</p>
+            <div class="ex-with-html">
+                <h5>HTML</h5>
+                <pre>
+&lt;details&gt;
+    &lt;summary&gt;Título&lt;/summary&gt;
+    &lt;p&gt;texto de ejemplo que estaría escondido hasta que
+     no des clic en el título.&lt;/p&gt;
+&lt;/details&gt;
+
+
+
+                </pre>
+                <h5>Muestra</h5>
+                <iframe src="" frameborder="0"></iframe>
+            </div>
+        </section>
+
+        <section  id="sec6"><h2>Imágenes y GIFs con &lt;img&gt;</h2>
+            <p>Sintaxis: <clp>&lt;img <a>src="foto.png"</a> <clb>alt=”descripcion”</clb>&gt;</clp></p>
+        <p>La etiqueta <img> no se cierra porque es un elemento vacío (no tiene contenido en su interior), solo sirve para <clb>mostrar una imagen</clb> mediante el atributo <a>src</a> (source), que <a>indica la ubicación de la imagen</a>,y el parametro <clb>alt</clb> es para darle una <clb>descripcion a la imagen</clb> para perosnas que tengan alguna discapcidad visual, o para el caso en el que la imagen estér rota.</p>
+        
+        </section>
+
+        <section id="sec7">
+            <h2>Creación del archivo y enlace de CSS</h2>
+            <article>
+                <h3>Creación del archivo CSS en VS Code</h3>
+                <p>Al abrir la carpeta donde se guardarán los archivos dentro de VS Code, tendremos que <clb>darle al apartado de "nuevo archivo..." para crear una nueva hoja</clb> de código.</p>
+                <img src="IMAGES/na_dm.png">
+                <p>Posteriormente, <clb>le asignamos un nombre con la extensión .css que se relacione con el HTML</clb>.</p>
+                <img src="IMAGES/ecss_dm.png">
+            </article>
+            <article>
+                <h3>Link que dirige hacia el CSS</h3>
+                <p>Este link <clb>es un redireccionamiento a una hoja de estilos</clb> para darle un diseño más bonito, y <clb>se situará en la cabecera</clb> HTML (&lt;head&gt;).</p>
+                <p>La sintaxis sería la siguiente:
+                <p>&lt;link rel="stylesheet" href="estilo.css"&gt;</p>
+                <p><clb>En este caso la hoja de estilos debería llamarse</clb> <clp>estilo.css</clp>, que, a diferencia del nombre del HTML, aquí <clb>no importa el nombre que le des</clb> al link <clb>siempre que tenga el mismo nombre que archivo</clb></p>
+
+                <p>Aunque también se puede insertar el CSS en el propio HTML con &lt;style&gt;, pero <clb>por temas de organización es mejor tenerlo a parte</clb>.</p>
+            </article>
+        </section>
+
+        <section id="sec8">
+            <h2>Clases y formato</h2>
+            <p>A la hora de estilar una página, se suele plantear un aspecto predeterminado para todos los elementos y usarlo de plantilla para toda la página, es por eso que se usan las etiquetas creadas en el CSS.</p>
+            <p>Pero, hay veces <clb>donde necesitamos que elementos concretos tengan un aspecto distinto</clb>, y por eso <clb>necesitaremos colocar unos atributos llamados</clb> <clp>class</clp>, al que le pondremos un nombre en concreto para que en el CSS pueda identificar cuándo aplicar esas características concretas.</p>
+            <p>Para eso, <clb>en</clb> el <clb>HTML se escribe</clb> <clp>class=”nombre-del-atributo”</clp> <clb>dentro CUALQUIER etiqueta</clb>, mientras, <clb>en</clb> el <clb>CSS</clb> se pone un <clp>.nombre-del-atributo</clp></p>
+            <table>
+                <tr>
+                    <th></th>
+                    <th>Sin clases</th>
+                    <th>Con clase</th>
+                </tr>
+                <tr>
+                    <th>HTML</th>
+                    <td>&lt;div&gt;&lt;/div&gt;</td>
+                    <td>&lt;div <clp>class="clase"</clp>&gt;&lt;/div&gt;</td>
+                </tr>
+                <tr>
+                    <th>CSS</th>
+                    <td>div{}</td>
+                    <td><clp>.clase</clp>{}</td>
+                </tr>
+            </table>
+            <hr>
+            <h4 class="space">Ejemplo:</h4>
+            <div class="ex-with-css">
+                <h5>HTML</h5>
+                <pre>
+&lt;div&gt;Div 1&lt;/div&gt;
+&lt;div&gt;Div 2&lt;/div&gt;
+&lt;div class="clase"&gt;Div 3&lt;/div&gt;
+
+
+
+
+
+                </pre>
+                <h5>CSS</h5>
+                <pre>
+div {
+    width:70px; text-align:center;
+    margin:5px;
+    background-color:blue; color:white;}
+
+.clase{
+    background-color:pink; color:black;}
+
+                </pre>
+                <h5>Muestra</h5>
+                <iframe src="EJ_CLASS_DIVS/index.html" frameborder="0"></iframe>
+            </div>
+        </section>
+
+        <section id="sec9">
+            <h2>Fondos y colores</h2>
+            <p>Los fondos <clb>se pueden usar de distintas formas</clb> en función del diseño que le quieres dar.</p>
+                <p>Unos ejemplos de distintos fondos son:</p>
+                <h4>Fondo de un color</h4>
+                <p><clp>background-color:</clp> blue<clp>;</clp></p>
+                <div class="ex-with-css">
+                    <h5>HTML</h5>
+                    <pre>
+&lt;body&gt;
+    &lt;h1&gt;texto&lt;/h1&gt;
+&lt;/body&gt;
+
+
+
+
+
+                    </pre>
+                    <h5>CSS</h5>
+                    <pre>
+body{
+    background-color: blue;
+}
+
+
+
+
+
+                    </pre>
+                    <h5>Muestra</h5>
+                    <iframe src="" frameborder="0"></iframe>
+                </div>
+                <h4>Fondo con una imagen</h4>
+                <p>Estos fondos <clb>se formarán como un mosaico</clb> en función <clb>de</clb> un <clb>tamaño predeterminado</clb> que pondrá el navegador, por lo que <clb>es importante darle</clb> también <clb>el tamaño adecuado</clb> a ese fondo.</p>
+                <p><clp>background-image:</clp> <a>url(“enlace de la imagen”)</a><clp>;</clp></p>
+                
+                <div class="ex-with-css">
+                    <h5>HTML</h5>
+                    <pre>
+&lt;body&gt;
+    &lt;h1&gt;texto&lt;/h1&gt;
+&lt;/body&gt;
+
+
+
+
+
+                    </pre>
+                    <h5>CSS</h5>
+                    <pre>
+body{
+    margin:0;
+    height:100px;
+    background-image: 
+    url("imagen-gato.png");
+}
+
+
+                    </pre>
+                    <h5>Muestra</h5>
+                    <iframe src="" frameborder="0"></iframe>
+                </div>
+                <h4>Fondo con degradado</h4>
+                <p>Existen muchas formas de hacer degradados, pero la más sencilla es mediante un linear-gradient, que <clb>hace un degradado de arriba hacia abajo</clb>, usando <clb>porcentajes para indicar que color usar en cada parte del degradado</clb>.</p>
+                <p><clp>background:</clp> <clb>linear-gradient(</clb>orange 0%, blue 100%<clb>)</clb><clp>>;</clb></p>
+                <div class="ex-with-css">
+                    <h5>HTML</h5>
+                    <pre>
+&lt;body&gt;
+    &lt;h1&gt;texto&lt;/h1&gt;
+&lt;/body&gt;
+
+
+
+
+
+                    </pre>
+                    <h5>CSS</h5>
+                    <pre>
+body{
+    margin: 0;
+    height: 300px;
+    background: 
+    linear-gradient(orange 0%, blue 100%);
+}
+
+
+                    </pre>
+                    <h5>Muestra</h5>
+                    <iframe src="" frameborder="0"></iframe>
+                </div>
+
+        </section>
+        <section id="sec10">
+            <h2>Fuentes para el texto</h2>
+            <p>Estos estilos se usan <clb>para el texto</clb>. Les puedes asignar una variedad bastante inmensa de estilos por la cantidad inmensa de etiquetas que existen, pero he aquí unos ejemplos:</p>
+            <div class="ex-with-css">
+                <h5>HTML</h5>
+                <pre>
+&lt;p&gt;Texto con diseño predeterminado&lt;/p&gt;
+&lt;p class="uno"&gt;Texto en rojo&lt;/p&gt;
+&lt;p class="dos"&gt;
+Texto con una fuente de 30px&lt;/p&gt;
+&lt;p class="tres"&gt;
+Texto con la fuente de texto Arial&lt;/p&gt;
+&lt;p class="ct"&gt;Texto con fondo aqua&lt;/p&gt;
+&lt;p class="ci"&gt;Texto en cursiva&lt;/p&gt;
+&lt;p class="seis"&gt;Texto subrayado&lt;/p&gt;
+&lt;p class="siete"&gt;
+Texto con la fuente expandida&lt;/p&gt;
+                </pre>
+                <h5>CSS</h5>
+                <pre>
+.uno{color:red;}
+.dos{font-size: 30px;}
+.tres{font-family: Arial;}
+.cuatro{background-color:aqua;}
+.cinco{font-style: italic;}
+.seis{text-decoration: underline;}
+.siete{font-stretch:expanded;}
+
+
+
+
+                </pre>
+                <h5>Muestra</h5>
+                <iframe src="" frameborder="0"></iframe>
+            </div>
+        </section>
+
+        <section id="sec11">
+            <h2>Box model</h2>
+            <p>Comprende cómo funciona el modelo de caja, que incluye el contenido, padding, border y margin, ya que es esencial para el diseño, en resumen <clb>estos parametros le dan forma a nuestros elementos</clb> dentro del html.</p>
+            <pre>
+width: 300px;           /*Ancho del contenido*/
+height: 150px;          /*Alto del contenido*/
+margin: 15px;           /*Margen entre la caja y el resto de elementos de la página*/
+border: 2px solid red;  /*Borde de la caja*/
+padding: 20px;          /*Espacio entre el borde de la caja y el texto*/
+            </pre>
+            <p><clb>Se puede trabajar con distintas medidas</clb> y no solo con pixeles, tanto <clb>exactas como los cm, o relativas como el porcentaje (%)</clb>; ejemplos son de las muchas más que hay.</p>
+            <hr>
+            <p>La mejor forma de coomprender esta función es entrando a una página web cualquiera, dar clic derecho y seleccionar el apartado de "Inspeccionar" y verás a la derecha una sección en la que aparece todo el código fuente de la página junto a un recuadro que te señalará las distintas partes del box model.</p>
+        </section>
+
+        <section id="sec12">
+            <h2>Posiciones</h2>
+            <p>Nuestra propiedad posición, tiene 5 valores:</p>
+            <pre>
+position: static;   /*estática*/
+position: relative; /*relativa*/
+position: absolute; /*absoluta*/
+position: fixed;    /*fija*/
+position: sticky;   /*pegada*/
+            </pre>
+            <p>Para mover nuestras cajas, usaremos cuatro propiedades que nos permitirá mover el elemento:</p><ul>
+                <li><clp>top:</clp> 0<clp>;</clp> → Posiciona el elemento lo más <clb>arriba</clb> posible.</li>
+                <li><clp>bottom:</clp> 0<clp>;</clp> → Posiciona el elemento lo más <clb>abajo</clb> posible.</li>
+                <li><clp>left:</clp> 0<clp>;</clp> → Posiciona el elemento lo más a la <clb>izquierda</clb> posible.</li>
+                <li><clp>right:</clp> 0<clp>;</clp>→ Posiciona el elemento lo más a la <clb>derecha</clb> posible.</li></ul>
+            <p>Cuanto más valor (en forma de px, cm, %...) le demos a esas propiedades, más alejado de  esa posición estará.</p>
+
+            <h4>Position static</h4>
+            <p>Es el <clb>valor por defecto</clb> de todo elemento, hará que las propiedades top, bottom, left y right no tengan valor.</p>
+            <p><clb>No tiene casos de uso</clb> a la hora de declararlo en el CSS.</p>
+            <h4>Position relative</h4>
+            <p>Este elemento estará <clb>infuido por las propiedades top, bottom, left y right</clb>, <clb>y</clb> también vendrá influido por <clb>las propiedades de la página</clb> (todos los contenedores que tenga anidado).</p>
+            <p>Si te mueves de la zona, el elemeno no te seguirá y se quedará en la misma posición en relación a la página.</p>
+            <h4>Position absolute</h4>
+            <p></p>
+            <p>Este tipo de posición <clb>funciona de forma similar a relative</clb>, pero NO <clb>viene influido</clb> por las propiedades de la página, solo <clb>únicamente del contenedor más cercano</clb> (su primer padre o antecesor) que tenga, si no, pues del contenedor raiz (html o body).</p>
+            <h4>Position sticky</h4>
+            <p>Esta posición funciona <clb>en base a un contenedor en específico</clb>, a si que, <clb>después de desplazarnos</clb> (scrollear) <clb>a cierto punto de nuestra pantalla, este valor se quedará fijado al final de un contenedor y no se moverá</clb> a no ser que volvamos a la parte de la página en la que se encuentra el contenedor.</p>
+            <h4>Position fixed</h4>
+            <p>Este valor <clb>fijará la posición de tu elemento en la pantalla incluso cuando te desplaces</clb> en el navegador <clb>fuera de un contenedor</clb> especifico.</p>
+                
+        </section>
+
+        <section id="sec13">
+            <h2>Creación de figuras geometricas</h2>
+            <h5>Cuadrado y rectángulo</h5>
+            <pre>
+.cuadrado{
+    width: 100px;
+    height:  100px;
+    background: aqua;
+}
+            </pre>
+            <h5>Círculo</h5>
+            <pre>
+.circulo{
+    width: 100px;
+    height:  100px;
+    border-radius: 50%;
+    background: green;
+}
+            </pre>
+            <h5>Triangulo</h5>
+            <pre>
+.triangulo{
+    width: 0;
+    height: 0;
+    border-left: 100px solid orange;
+    border-top: 50px solid transparent;
+    border-bottom: 100px solid transparent;
+}
+            </pre>
+            <h5>Rombo</h5>
+            <pre>
+.rombo{
+    width: 100px;
+    height:  100px;
+    transform: rotate(45 deg);
+    background: pink;
+}
+            </pre>
+        </section>
+    </body>
+
+</html>
