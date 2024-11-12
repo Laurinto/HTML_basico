@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <html lang="es-ES">
     <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>HTML Básico</title>
         <meta name="description" content="Bases para el entendimiento básico de HTML, CSS y JavaScript">
         <meta property="og:title" content="HTML, CSS y JavaSript Básico">
@@ -17,7 +16,6 @@
             <h1>HTML BÁSICO</h1>
             <h2>HTML, CSS y JS</h2>
         </section>
-
         <aside>
             <hr>
             <header><h2>Índice</h2></header>
@@ -32,7 +30,7 @@
                 <p><a href="#sec8">07. clases y formato</a></p>
                 <p><a href="#sec9">08. Fondos y colores</a></p>
                 <p><a href="#sec10">09. Fuentes para el texto</a></p>
-                <p><a href="#sec11">10. box model</a></p>
+                <p><a href="#sec11">10. Box model</a></p>
                 <p><a href="#sec12">11. Posiciones</a></p>
                 <p><a href="#sec13">12. figuras geometricas</a></p>
             </nav>
@@ -211,21 +209,19 @@
                 </tr>
             </table>
             <hr>
-            <h4 class="space">Ejemplo:</h4>
-            <div class="ex-with-css">
+            <h4>Ejemplo:</h4>
+            <div class="contenedor">
+                <div class="ctnwtcss">
                 <h5>HTML</h5>
                 <pre>
 &lt;div&gt;Div 1&lt;/div&gt;
 &lt;div&gt;Div 2&lt;/div&gt;
 &lt;div class="clase"&gt;Div 3&lt;/div&gt;
-
-
-
-
-
-                </pre>
-                <h5>CSS</h5>
-                <pre>
+                    </pre>
+                </div>
+                <div class="ctnwtcss">
+                    <h5>CSS</h5>
+                    <pre>
 div {
     width:70px; text-align:center;
     margin:5px;
@@ -233,10 +229,12 @@ div {
 
 .clase{
     background-color:pink; color:black;}
-
-                </pre>
-                <h5>Muestra</h5>
-                <iframe src="EJ_CLASS_DIVS/index.html" frameborder="0"></iframe>
+                    </pre>
+                </div>
+                <div class="ctnwtcss">
+                    <h5>Muestra</h5>
+                    <iframe src="EXAMPLES/EJ_CLASS_DIVS/index.html" frameborder="0"></iframe>
+                </div>
             </div>
         </section>
 
@@ -244,81 +242,77 @@ div {
             <h2>Fondos y colores</h2>
             <p>Los fondos <clb>se pueden usar de distintas formas</clb> en función del diseño que le quieres dar.</p>
                 <p>Unos ejemplos de distintos fondos son:</p>
+                <hr>
                 <h4>Fondo de un color</h4>
                 <p><clp>background-color:</clp> blue<clp>;</clp></p>
-                <div class="ex-with-css">
-                    <h5>HTML</h5>
-                    <pre>
+                <div class="contenedor">
+                    <div class="ctnwtcss">
+                        <h5>HTML</h5>
+                        <pre>
 &lt;body&gt;
     &lt;h1&gt;texto&lt;/h1&gt;
 &lt;/body&gt;
-
-
-
-
-
-                    </pre>
-                    <h5>CSS</h5>
-                    <pre>
+                        </pre>
+                    </div>
+                    <div class="ctnwtcss">
+                        <h5>CSS</h5>
+                        <pre>
 body{
     background-color: blue;
 }
-
-
-
-
-
-                    </pre>
-                    <h5>Muestra</h5>
-                    <iframe src="" frameborder="0"></iframe>
+                        </pre>
+                    </div>
+                    <div class="ctnwtcss">
+                        <h5>Muestra</h5>
+                        <iframe src="" frameborder="0"></iframe>
+                    </div>
                 </div>
+                <hr>
                 <h4>Fondo con una imagen</h4>
                 <p>Estos fondos <clb>se formarán como un mosaico</clb> en función <clb>de</clb> un <clb>tamaño predeterminado</clb> que pondrá el navegador, por lo que <clb>es importante darle</clb> también <clb>el tamaño adecuado</clb> a ese fondo.</p>
                 <p><clp>background-image:</clp> <a>url(“enlace de la imagen”)</a><clp>;</clp></p>
                 
-                <div class="ex-with-css">
-                    <h5>HTML</h5>
-                    <pre>
+                <div class="contenedor">
+                    <div class="ctnwtcss">
+                        <h5>HTML</h5>
+                        <pre>
 &lt;body&gt;
     &lt;h1&gt;texto&lt;/h1&gt;
 &lt;/body&gt;
-
-
-
-
-
-                    </pre>
-                    <h5>CSS</h5>
-                    <pre>
+                        </pre>
+                    </div>
+                    <div class="ctnwtcss">
+                        <h5>CSS</h5>
+                        <pre>
 body{
     margin:0;
     height:100px;
     background-image: 
     url("imagen-gato.png");
 }
-
-
-                    </pre>
-                    <h5>Muestra</h5>
-                    <iframe src="" frameborder="0"></iframe>
+                        </pre>
+                    </div>
+                    <div class="ctnwtcss">
+                        <h5>Muestra</h5>
+                        <iframe src="" frameborder="0"></iframe>
+                    </div>
                 </div>
+                <hr>
                 <h4>Fondo con degradado</h4>
                 <p>Existen muchas formas de hacer degradados, pero la más sencilla es mediante un linear-gradient, que <clb>hace un degradado de arriba hacia abajo</clb>, usando <clb>porcentajes para indicar que color usar en cada parte del degradado</clb>.</p>
                 <p><clp>background:</clp> <clb>linear-gradient(</clb>orange 0%, blue 100%<clb>)</clb><clp>>;</clb></p>
-                <div class="ex-with-css">
-                    <h5>HTML</h5>
-                    <pre>
+                <div class="contenedor">
+                    <div class="ctnwtcss">
+                        <h5>HTML</h5>
+                        <pre>
 &lt;body&gt;
     &lt;h1&gt;texto&lt;/h1&gt;
 &lt;/body&gt;
-
-
-
-
-
-                    </pre>
-                    <h5>CSS</h5>
-                    <pre>
+                        </pre>
+                    </div>
+                    <div class="ctnwtcss">
+                        <h5>CSS</h5>
+                        <pre>
 body{
     margin: 0;
     height: 300px;
@@ -327,18 +321,24 @@ body{
 }
 
 
-                    </pre>
-                    <h5>Muestra</h5>
-                    <iframe src="" frameborder="0"></iframe>
+                        </pre>
+                    </div>
+                    <div class="ctnwtcss">
+                        <h5>Muestra</h5>
+                        <iframe src="" frameborder="0"></iframe>
+                    </div>
                 </div>
 
         </section>
+
         <section id="sec10">
             <h2>Fuentes para el texto</h2>
             <p>Estos estilos se usan <clb>para el texto</clb>. Les puedes asignar una variedad bastante inmensa de estilos por la cantidad inmensa de etiquetas que existen, pero he aquí unos ejemplos:</p>
-            <div class="ex-with-css">
-                <h5>HTML</h5>
-                <pre>
+            
+            <div class="contenedor">
+                <div class="ctnwtcss">
+                    <h5>HTML</h5>
+                    <pre>
 &lt;p&gt;Texto con diseño predeterminado&lt;/p&gt;
 &lt;p class="uno"&gt;Texto en rojo&lt;/p&gt;
 &lt;p class="dos"&gt;
@@ -350,9 +350,11 @@ Texto con la fuente de texto Arial&lt;/p&gt;
 &lt;p class="seis"&gt;Texto subrayado&lt;/p&gt;
 &lt;p class="siete"&gt;
 Texto con la fuente expandida&lt;/p&gt;
-                </pre>
-                <h5>CSS</h5>
-                <pre>
+                    </pre>
+                </div>
+                <div class="ctnwtcss">
+                    <h5>CSS</h5>
+                    <pre>
 .uno{color:red;}
 .dos{font-size: 30px;}
 .tres{font-family: Arial;}
@@ -360,13 +362,12 @@ Texto con la fuente expandida&lt;/p&gt;
 .cinco{font-style: italic;}
 .seis{text-decoration: underline;}
 .siete{font-stretch:expanded;}
-
-
-
-
-                </pre>
-                <h5>Muestra</h5>
-                <iframe src="" frameborder="0"></iframe>
+                    </pre>
+                </div>
+                <div class="ctnwtcss">
+                    <h5>Texto</h5>
+                    <iframe src="" frameborder="0"></iframe>
+                </div>
             </div>
         </section>
 
@@ -388,6 +389,7 @@ padding: 20px;          /*Espacio entre el borde de la caja y el texto*/
         <section id="sec12">
             <h2>Posiciones</h2>
             <p>Nuestra propiedad posición, tiene 5 valores:</p>
+            <article class="onclm">
             <pre>
 position: static;   /*estática*/
 position: relative; /*relativa*/
@@ -395,6 +397,7 @@ position: absolute; /*absoluta*/
 position: fixed;    /*fija*/
 position: sticky;   /*pegada*/
             </pre>
+            </article>
             <p>Para mover nuestras cajas, usaremos cuatro propiedades que nos permitirá mover el elemento:</p><ul>
                 <li><clp>top:</clp> 0<clp>;</clp> → Posiciona el elemento lo más <clb>arriba</clb> posible.</li>
                 <li><clp>bottom:</clp> 0<clp>;</clp> → Posiciona el elemento lo más <clb>abajo</clb> posible.</li>
@@ -402,20 +405,32 @@ position: sticky;   /*pegada*/
                 <li><clp>right:</clp> 0<clp>;</clp>→ Posiciona el elemento lo más a la <clb>derecha</clb> posible.</li></ul>
             <p>Cuanto más valor (en forma de px, cm, %...) le demos a esas propiedades, más alejado de  esa posición estará.</p>
 
+            <hr>
             <h4>Position static</h4>
             <p>Es el <clb>valor por defecto</clb> de todo elemento, hará que las propiedades top, bottom, left y right no tengan valor.</p>
             <p><clb>No tiene casos de uso</clb> a la hora de declararlo en el CSS.</p>
+            <img src="IMAGES/pst-stt.png">
+            <hr>
             <h4>Position relative</h4>
             <p>Este elemento estará <clb>infuido por las propiedades top, bottom, left y right</clb>, <clb>y</clb> también vendrá influido por <clb>las propiedades de la página</clb> (todos los contenedores que tenga anidado).</p>
             <p>Si te mueves de la zona, el elemeno no te seguirá y se quedará en la misma posición en relación a la página.</p>
+            <img src="IMAGES/pst-stt2.png">
+            <hr>
             <h4>Position absolute</h4>
             <p></p>
             <p>Este tipo de posición <clb>funciona de forma similar a relative</clb>, pero NO <clb>viene influido</clb> por las propiedades de la página, solo <clb>únicamente del contenedor más cercano</clb> (su primer padre o antecesor) que tenga, si no, pues del contenedor raiz (html o body).</p>
+            <img src="IMAGES/pst-stt3.png">
+            <hr>
             <h4>Position sticky</h4>
             <p>Esta posición funciona <clb>en base a un contenedor en específico</clb>, a si que, <clb>después de desplazarnos</clb> (scrollear) <clb>a cierto punto de nuestra pantalla, este valor se quedará fijado al final de un contenedor y no se moverá</clb> a no ser que volvamos a la parte de la página en la que se encuentra el contenedor.</p>
+            <img src="IMAGES/pst-stt4.png">
+            <hr>
             <h4>Position fixed</h4>
             <p>Este valor <clb>fijará la posición de tu elemento en la pantalla incluso cuando te desplaces</clb> en el navegador <clb>fuera de un contenedor</clb> especifico.</p>
-                
+            <hr>
+            <h4>Practica con el ejemplo:</h4>
+            <p>Copia el código que se encuentra en el <a href="IMAGES/pdf-ej-positions.pdf">enlace</a>, empieza a jugar con el código probando las distintas posiciones y propiedades que hay, y describe en un documento a parte lo que creees que ha cambiado.</p>
+            <p>No pasa nada si vuestro código empieza a hacer cosas extrañas, el objetivo es que llegueis a entender el porqué las hace, el resultado es lo de menos.</p>
         </section>
 
         <section id="sec13">
@@ -457,6 +472,11 @@ position: sticky;   /*pegada*/
 }
             </pre>
         </section>
-    </body>
 
+        <footer>
+            <p>Última actualización: 12/11/2024</p>
+        </footer>
+        
+
+    </body>
 </html>
