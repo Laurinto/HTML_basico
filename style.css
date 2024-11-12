@@ -3,9 +3,9 @@
     --cl-background: #a0e0f4;
     --cl-text: #151858;
     --cl-pre:#527b94;
-    --cl-blue:#53a9e2;
+    --cl-blue:#4389b8;
     --cl-yellow:#c07e31;
-    --cl-pink: #d37de9;
+    --cl-pink: #c062d8;
 }
 
 @media (prefers-color-scheme: dark){
@@ -23,7 +23,12 @@
 
 @font-face {
     font-family: "OpenSans";
-    src: url(OpenSans-VariableFont_wdth\,wght.ttf) format("truetype");
+    src: url(FONTS/OpenSans-VariableFont_wdth\,wght.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "Impact";
+    src: url(FONTS/impact.ttf) format("truetype");
 }
 
 html{
@@ -51,24 +56,24 @@ clb{color: var(--cl-blue);}
 clp{color: var(--cl-pink);}
 
 nav{column-count: 2;}
+aside{p, a{color: var(--cl-text);}}
 iframe{background: #fff; margin: 20px 0; border-radius: 5px; vertical-align: middle;}
 
-pre{ max-width: 700px; background: var(--cl-pre); color: var(--cl-text);
-    border-radius: 5px;  align-items: center; vertical-align: center; padding: 20px;
-    margin: auto;
+pre{background: var(--cl-pre); color: var(--cl-text); border-radius: 5px;
+    padding: 10px;
+    overflow: auto;
 }
-div >  pre{max-width: 400px;}
+.nncc{column-count: 2;}
 
-.title{
-    background: var(--cl-pre); border-radius: 5px;
-        p{text-align: center;}
-        h2{text-align: center;}
-}
+.contenedor{width: 100%; display: flex; gap:20px; flex-wrap: wrap; margin-top: 10px;}
+.ctnwtcss{display: flex;width: calc(33.3% - 20px); flex-direction: column; position: relative;}
 
-aside{
-    p{color: var(--cl-text); font-family: OpenSans;}
-    a{color: var(--cl-text);}
-}
+@media(max-width: 768px){.ctnwtcss{width: calc(50% - 20px);}}
+@media(max-width: 425px){.ctnwtcss{width: calc(100%);}}
+
+.onclm{}
+
+.title{background: var(--cl-pre);border-radius:5px;p,h2{text-align: center;}}
 
 section{
     border-radius: 5px;
@@ -76,19 +81,12 @@ section{
     padding: 20px;
     background: var(--cl-background);
 
-    .nncc{column-count: 2;}
-    article > p{list-style-type: none; color: var(--cl-text); font-family: OpenSans;}
-}
+article > p{list-style-type: none; color: var(--cl-text); font-family: OpenSans;}}
 
 .ex-with-css{column-count: 3; border:20px  0;}
 .ex-with-html{column-count: 2; margin: 0 auto; pre{margin-top: 5px;}}
-.space{padding-bottom: 10px;}
 img{margin: 0 auto; border-radius: 5px;}
 
 table{border-collapse: collapse; margin:20px auto;}
 th, tr, td{padding:10px; border: 2px solid var(--cl-text);
     color: var(--cl-text); font-family: OpenSans;}
-
-@media (max-width: 425px){
-    .nncc{column-count: 1;}
-}
