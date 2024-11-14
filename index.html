@@ -12,10 +12,16 @@
     </head>
     <body>
         <section class="title">
-            <p>Proyecto Realizado por Laura.U, Ian y Coral</p>
+            <p>Proyecto realizado por Laura.U, Ian y Coral</p>
             <h1>HTML BÁSICO</h1>
             <h2>HTML, CSS y JS</h2>
+            <p><ntpr>El índice no funcionará de momento por mantenimiento. Disculpa por las molestias.</ntpr></p>
+            <div class="contact">
+                <imput type="color" value="var(--cl-text)"></imput>
+                <img src="ICONS/bxs-contact.svg">
+            </div>
         </section>
+        <main>
         <aside>
             <hr>
             <header><h2>Índice</h2></header>
@@ -24,33 +30,104 @@
                 <p><a href="#sec2">02. Estructura del HTML</a></p>
                 <p><a href="#sec3">03. Insertar enlaces</a></p>
                 <p><a href="#sec4">04. Listas ordenadas y desordenadas</a></p>
-                <p><a href="#sec5">Insertar videos de youtube</a></p>
-                <p><a href="#sec6">05. Summary + Details</a></p>
-                <p><a href="#sec7">06. Creación del archivo y enlace de CSS</a></p>
-                <p><a href="#sec8">07. clases y formato</a></p>
-                <p><a href="#sec9">08. Fondos y colores</a></p>
-                <p><a href="#sec10">09. Fuentes para el texto</a></p>
-                <p><a href="#sec11">10. Box model</a></p>
-                <p><a href="#sec12">11. Posiciones</a></p>
-                <p><a href="#sec13">12. figuras geometricas</a></p>
+                <p><a href="#sec5">05. Insertar videos de youtube</a></p>
+                <p><a href="#sec6">06. Summary + Details</a></p>
+                <p><a href="#sec7">07. Creación del archivo y enlace de CSS</a></p>
+                <p><a href="#sec8">08. clases y formato</a></p>
+                <p><a href="#sec9">09. Fondos y colores</a></p>
+                <p><a href="#sec10">10. Fuentes para el texto</a></p>
+                <p><a href="#sec11">11. Box model</a></p>
+                <p><a href="#sec12">12. Posiciones</a></p>
+                <p><a href="#sec13">13. figuras geometricas</a></p>
+                <p><a href="#sec14">14.</a></p>
             </nav>
             <hr>
         </aside>
+
+        <section>
+            <h2>Introducción</h2>
+            <p>HTML es un lenguaje de marcas que </p>
+            <p>En el lenguaje HTML se pueden usar tanto mayúsculas y minúsculas y estas seránreconocidas igual, pues la sintaxis no diferencia entre ese tipo de caracteres.</p>
+            <p>Ejemplo:<html> </HTML> funcionan igual al <html></html> pero se recomienda usar minúsculas,ya que es más cómodo y ordenado.</p>
+
+            <h3>Uso de VS Code</h3>
+            <p>Acceso a la versión online --> https://vscode.dev</p>
+            <p>Formas de optimizar el tiempo:
+
+                Podéis usar los siguientes atajos para facilitaros el
+                trabajo y hacer las cosas de forma más eficiente:
+                
+                ctrl + s → guardar
+                 alt + clic derecho → tener varios puntos desde
+                donde escribir.
+                mayus + flechas → seleccionar una parte del
+                teexto sin usar el ratón
+                ctrl + z/y → retroceder/adelantar</p>
+
+            <p>Extensiones:
+
+Live Preview → Es una extensión que te permite ver el
+aspecto de la página web a tiempo real cuando vas
+modificándolo, al lado del código que vas escribiendo, sin
+la necesidad de ir al navegador. Igualmente es
+recomendable verlo en varios navegadores porque entre
+uno y otro puede haber pequeños detalles que cambien.
+
+
+
+Spanish Language Pack for VSCode → en caso de que estés
+usando la versión de escritorio y no te guste tener el
+programa en inglés, puedes descargar esta extensión para
+tenerlo en español.</p>
+        </section>
+
+        <section>
+            <h2>Creación de un documento HTML y su comportamiento</h2>
+            <p></p>
+
+            <h3>¿Por qué se usa intex.html?</h3>
+            <p>El archivo index.html es un estándar establecido que facilita la navegación y la gestión de sitios web. Los servidores web tratan index.html como la página predeterminada en un directorio, lo que permite que los usuarios accedan fácilmente a la página principal sin tener que escribir el nombre completo del archivo en la URL. Resumidamente, el index es necesario a ser reconocido y el .html para que te reconozca el codigo.</p>
+        </section>
     
-        <section id="sec1">
+        <section>
+            <article>
             <h2>Etiquetas principales</h2>
-            <article>
-                <h4>Cabecera HTML5 y su estructura</h4>
+            <table>
+                <tr>
+                    <td>&lt;p&gt; → Para texto.</td>
+                    <td>&lt;br&gt; → Para realizar saltos de línea.</td>
+                    <td>&lt;h1-h6&gt;  → Para títulos, van de más relevante (h1) a menos relevante (h6).</td>
+                </tr>
+                <tr>
+                    <td>&lt;div&gt; → Para crear un contenedor.</td>
+                    <td>&lt;table&gt; → Crea una tabla.</td>
+                    <td>&lt;hr&gt; → Hace una línea horizontal en la página.</td>
+                </tr>
+            </table>
             </article>
             <article>
-                <h4>Etiquetas basicas del HTML</h4>
+                <h3>Cabecera HTML5 y su estructura</h3>
+                <p>Las cabeceras de HTML5 dentro de la etiqueta &lt;head&gt; proporcionan información esencial sobre la páginaweb. Incluyen el DOCTYPE para indicar que es un documento HTML5, el charset para especificar lacodificación de caracteres (UTF-8), y el viewport para adaptar el diseño a dispositivos móviles. También permiten definir el título, vincular hojas de estilo o iconos como el favicon, y garantizar la compatibilidadcon navegadores más antiguos. Estas cabeceras mejoran la accesibilidad, SEO y experiencia de usuario.</p>
+
+                <p>Una muestra clara es</p>
+                <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+    &lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;My WEB&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;/body&gt;&lt;/html>&lt;/p&gt;
+                </pre>
             </article>
             <article>
-                <h4>Etiquetas para crear tablas</h4>
+                <h3>Etiquetas para crear tablas</h3>
             </article>
         </section>
 
-        <section id="sec2">
+        <section>
             <h2>Estructura del HTML</h2>
             <p>La estructura en HTML es bastante importante para mantener un orden y para que tanto nosotros como los demás puedan saber en qué parte del código estamos.</p>
             <p>Aunque no sea obligatorio, pues hay páginas que usan muchos &lt;div&gt; o &lt;span&gt; para estructurar las páginas, el abuso de estos pueden dar a un código sucio y desordenado que para algunos podría llegar a ser ilegible, y por ello es mejor usar estas etiquetas sintácticas.</p>
@@ -71,68 +148,49 @@
                 <summary>Ejemplo visual</summary>
                 <img src="estructura-html.png">imagen provisional</img>
             </details>
-            </section>
+        </section>
 
-            <section id="sec3">
-                <h2 id="enl">Insertar enlaces</h2>
-                <p>Sintaxis: <clp>&lt;a</clp> <a>href="URL"</a>&gt;Contenido del enlace<clp>&lt;/a&gt;</clp></p>
-                <p>Esta sintaxis <clb>crea un enlace</clb>, pero poco sirve si no tiene nada que enlazar, por lo que <clb>tiene que venir acompañado del atributo</clb> <a>href</a>.</p>
+        <section>
+            <h2 id="enl">Insertar enlaces</h2>
+            <p>Sintaxis: <clp>&lt;a</clp> <a>href="URL"</a>&gt;Contenido del enlace<clp>&lt;/a&gt;</clp></p>
+            <p>Esta sintaxis <clb>crea un enlace</clb>, pero poco sirve si no tiene nada que enlazar, por lo que <clb>tiene que venir acompañado del atributo</clb> <a>href</a>.</p>
 
-                <p>La URL dependerá de lo que queramos poner y a donde lo queremos dirigir.</p>
+            <p>La URL dependerá de lo que queramos poner y a donde lo queremos dirigir.</p>
 
-                <h4>Ejemplos:</h4>
+            <h4>Ejemplos:</h4>
 
-                <p><clp>&lt;a</clp> <a>href="http://www.manualweb.net"</a><clp>&gt;</clp>Enlace a una web<clp>&lt;/a&gt;</clp>
-                    <br>Enlace que redirige a otra <a href="https://developer.mozilla.org/es/">página externa</a></p>
+            <p><clp>&lt;a</clp> <a>href="http://www.manualweb.net"</a><clp>&gt;</clp>Enlace a una web<clp>&lt;/a&gt;</clp>
+            <br>Enlace que redirige a otra <a href="https://developer.mozilla.org/es/">página externa</a></p>
                 
-                <p><clp>&lt;a</clp> <a>href="documento.html"</a><clp>&gt;</clp>Enlace a un documento<clp>&lt;/a&gt;</clp><br>Se <a href="pdf-de-la-web.pdf">añade un documento</a> con el mismo nombre en el que pondremos href y podremos acceder a él por un elace</p>
+            <p><clp>&lt;a</clp> <a>href="documento.html"</a><clp>&gt;</clp>Enlace a un documento<clp>&lt;/a&gt;</clp><br>Se <a href="pdf-de-la-web.pdf">añade un documento</a> con el mismo nombre en el que pondremos href y podremos acceder a él por un elace</p>
                 
-                <p><clp>&lt;a</clp> <a>href="miimagen.png"</a><clp>&gt;</clp>Enlace a una imagen<clp>&lt;/a&gt;</clp><br><a href="imagen-de-la-web.png">Ver una imagen</a> en el html y que esta te lleve a un enlace</p>
+            <p><clp>&lt;a</clp> <a>href="miimagen.png"</a><clp>&gt;</clp>Enlace a una imagen<clp>&lt;/a&gt;</clp><br><a href="imagen-de-la-web.png">Ver una imagen</a> en el html y que esta te lleve a un enlace</p>
 
-                <p><clp>&lt;a</clp> <a>href="mimusica.mp3"</a><clp>&gt;</clp>Enlace a un audio<clp>&lt;/a&gt;</clp><br>Enlace a un archivo de sonido</p>
+            <p><clp>&lt;a</clp> <a>href="mimusica.mp3"</a><clp>&gt;</clp>Enlace a un audio<clp>&lt;/a&gt;</clp><br>Enlace a un archivo de sonido</p>
 
-                <p><clp>&lt;a</clp> <a>href="documento.html#loquesea"</a><clp>&gt;</clp>Enlace a una parte de un documento<clp>&lt;/a&gt;</clp><br>En este tipo de enlaces en los que se <a>usa # para enlazar</a> ese elemento <a href="#enl">con otra parte de la página</a>, <a>añadiremos a la etiqueta</a> en la que queremos redirigir <a>&lt;id=”...”./a&gt;</a> Este parámetro hace que pueda ser identificado por otras etiquetas siempre que estas quieran hacer referencia a este, por lo que a la hora de presionar el link, redirige a esa parte de la web en la que se encuentra el id.</p>
-                <div class="ex-with-html">
-                    <h5>HTML</h5>
-                    <pre>
-&lt;header&gt;
-    &lt;a href="#manolo"&gt;Texto hacia Manolo&lt;/a&gt;
-&lt;/header&gt;
-
-&lt;article&gt;Hola, soy Juan&lt;/article&gt;
-
-&lt;article id="manolo"&gt;Hola, soy Manolo&lt;/article&gt;
-
-                    </pre>
-                    <h5>Muestra</h5>
-                    <iframe src="" frameborder="0"></iframe>
-                </div>
+            <p><clp>&lt;a</clp> <a>href="documento.html#loquesea"</a><clp>&gt;</clp>Enlace a una parte de un documento<clp>&lt;/a&gt;</clp><br>En este tipo de enlaces en los que se <a>usa # para enlazar</a> ese elemento <a href="#enl">con otra parte de la página</a>, <a>añadiremos a la etiqueta</a> en la que queremos redirigir <a>&lt;id=”...”./a&gt;</a> Este parámetro hace que pueda ser identificado por otras etiquetas siempre que estas quieran hacer referencia a este, por lo que a la hora de presionar el link, redirige a esa parte de la web en la que se encuentra el id.</p>
+            <p class="codepen" data-height="300" data-theme-id="light" data-default-tab="html,result" data-slug-hash="abeJavj" data-pen-title="Ejemplo &amp;lt;a href=&amp;quot;...&amp;quot;&amp;gt;" data-editable="true" data-user="Laurinto" loading="lazy">
+                <span>See the Pen <a href="https://codepen.io/Laurinto/pen/abeJavj">
+                Ejemplo &lt;a href=&quot;...&quot;&gt;</a> by Laurinto (<a href="https://codepen.io/Laurinto">@Laurinto</a>)
+                on <a href="https://codepen.io">CodePen</a>.</span>
+              </p>
+              <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
         </section>
         
-        <section id="sec4">
+        <section>
             <header><h2>Listas ordenadas &lt;ol&gt; y desordenadas &lt;ul&gt;</h2></header>
             <p>La etiqueta <clp>&lt;ul&gt;</clp> es un elemento de bloque utilizado para definir <clb>listas desordenadas</clb> (aquellas en las que el orden de los elementos no es relevante) <clb>mostradas con puntos</clb> a su izquierda, y la etiqueta <clp>&lt;ol&gt;</clp> es uno que define <clb>listas ordenadas</clb>, <clb>enumeradas</clb> del uno hasta el número de elementos que hayan.</p>
             <p><clb>Los elementos</clb> en ambos tipos de la lista <clb>se definen con</clb> el elemento <clp>&lt;li&gt;</clp>.</p>
             <p>El elemento ul puede anidarse dentro de otro elemento ul para crear listas multinivel. Además, puede combinarse con el elemento ol para crear listas ordenadas y desordenadas mixtas.</p>
-            <div class="ex-with-html">
-                <h5>HTML</h5>
-                <pre>
-&lt;ol&gt;
-    &lt;li&gt;Texto 1&lt;/li&gt;
-    &lt;li&gt;Texto 2&lt;/li&gt;
-    &lt;ul&gt;
-        &lt;li&gt;Texto 1&lt;/li&gt;
-        &lt;li&gt;Texto 2&lt;/li&gt;
-        &lt;li&gt;Texto 3&lt;/li&gt;
-    &lt;/ul&gt;
-    &lt;li&gt;Texto 3&lt;/li&gt;
-&lt;/ol&gt;
-                </pre>
-                <h5>Muestra</h5>
-                <iframe src="" frameborder="0"></iframe>
-            </div>
-            </section>
-        <section id="sec5">
+            <p class="codepen" data-height="300" data-theme-id="light" data-default-tab="html,result" data-slug-hash="MWNxQvW" data-pen-title="Ejemplo" data-editable="true" data-user="Laurinto" loading="lazy">
+                <span>See the Pen <a href="https://codepen.io/Laurinto/pen/MWNxQvW">
+                Ejemplo</a> by Laurinto (<a href="https://codepen.io/Laurinto">@Laurinto</a>)
+                on <a href="https://codepen.io">CodePen</a>.</span>
+              </p>
+              <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+        </section>
+
+        <section>
             <header><h2>Insertar videos de youtube mediante &lt;iframe&gt;</h2></header>
             <p>1. Busca el video que te interesa poner en tu HTML y <clb>busca la sección "compartir"</clb> que hay debajo del título del video.</p>
             <img src="IMAGES/ifrma-dm.png">
@@ -141,32 +199,23 @@
             <p>3. <clb>Copia el código destacado</clb> que se muestra en la imagen, es lo esencial que hace que se pueda mostrar el iframe en la web.</p>
             <img src="IMAGES/ifrmc-dm.png">
         </section>
-        <section id="sec5"><h2>&lt;summary&gt; + &lt;details&gt;</h2>
+
+        <section><h2>&lt;summary&gt; + &lt;details&gt;</h2>
             <p>Se usa para <clb>crear secciones en las que al dar clic en el título <clp>&lt;summary&gt;</clp> de la sección, la información</clb> que se encontraba oculta, <clb>se muestra</clb>.</p>
-            <div class="ex-with-html">
-                <h5>HTML</h5>
-                <pre>
-&lt;details&gt;
-    &lt;summary&gt;Título&lt;/summary&gt;
-    &lt;p&gt;texto de ejemplo que estaría escondido hasta que
-     no des clic en el título.&lt;/p&gt;
-&lt;/details&gt;
-
-
-
-                </pre>
-                <h5>Muestra</h5>
-                <iframe src="" frameborder="0"></iframe>
-            </div>
+            <p class="codepen" data-height="300" data-theme-id="light" data-default-tab="html,result" data-slug-hash="mdNoXOX" data-pen-title="Ejemplo summary" data-editable="true" data-user="Laurinto" loading="lazy">
+                <span>See the Pen <a href="https://codepen.io/Laurinto/pen/mdNoXOX">
+                Ejemplo summary</a> by Laurinto (<a href="https://codepen.io/Laurinto">@Laurinto</a>)
+                on <a href="https://codepen.io">CodePen</a>.</span>
+              </p>
+              <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
         </section>
 
-        <section  id="sec6"><h2>Imágenes y GIFs con &lt;img&gt;</h2>
+        <section><h2>Imágenes y GIFs con &lt;img&gt;</h2>
             <p>Sintaxis: <clp>&lt;img <a>src="foto.png"</a> <clb>alt=”descripcion”</clb>&gt;</clp></p>
         <p>La etiqueta <img> no se cierra porque es un elemento vacío (no tiene contenido en su interior), solo sirve para <clb>mostrar una imagen</clb> mediante el atributo <a>src</a> (source), que <a>indica la ubicación de la imagen</a>,y el parametro <clb>alt</clb> es para darle una <clb>descripcion a la imagen</clb> para perosnas que tengan alguna discapcidad visual, o para el caso en el que la imagen estér rota.</p>
-        
         </section>
 
-        <section id="sec7">
+        <section>
             <h2>Creación del archivo y enlace de CSS</h2>
             <article>
                 <h3>Creación del archivo CSS en VS Code</h3>
@@ -186,7 +235,7 @@
             </article>
         </section>
 
-        <section id="sec8">
+        <section>
             <h2>Clases y formato</h2>
             <p>A la hora de estilar una página, se suele plantear un aspecto predeterminado para todos los elementos y usarlo de plantilla para toda la página, es por eso que se usan las etiquetas creadas en el CSS.</p>
             <p>Pero, hay veces <clb>donde necesitamos que elementos concretos tengan un aspecto distinto</clb>, y por eso <clb>necesitaremos colocar unos atributos llamados</clb> <clp>class</clp>, al que le pondremos un nombre en concreto para que en el CSS pueda identificar cuándo aplicar esas características concretas.</p>
@@ -220,7 +269,7 @@
             
         </section>
 
-        <section id="sec9">
+        <section>
             <h2>Fondos y colores</h2>
             <p>Los fondos <clb>se pueden usar de distintas formas</clb> en función del diseño que le quieres dar.</p>
                 <p>Unos ejemplos de distintos fondos son:</p>
@@ -250,7 +299,7 @@
                   <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
         </section>
 
-        <section id="sec10">
+        <section>
             <h2>Fuentes para el texto</h2>
             <p>Estos estilos se usan <clb>para el texto</clb>. Les puedes asignar una variedad bastante inmensa de estilos por la cantidad inmensa de etiquetas que existen, pero he aquí unos ejemplos:</p>
             
@@ -262,7 +311,7 @@
               <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
         </section>
 
-        <section id="sec11">
+        <section>
             <h2>Box model</h2>
             <p>Comprende cómo funciona el modelo de caja, que incluye el contenido, padding, border y margin, ya que es esencial para el diseño, en resumen <clb>estos parametros le dan forma a nuestros elementos</clb> dentro del html.</p>
             <ul>
@@ -284,7 +333,7 @@
             <p>La mejor forma de comprender esta función es entrando a una página web cualquiera, dar clic derecho y seleccionar el apartado de "Inspeccionar". Verás a la derecha una sección, en la que aparece todo el código fuente de la página junto a un recuadro de una sección llamada "Computed", a la derecha o debajo del código HTML (en función del tamaño de la pantalla que tengais), que te señalará las distintas partes del box model.</p>
         </section>
 
-        <section id="sec12">
+        <section>
             <h2>Posiciones</h2>
             <p>Nuestra propiedad posición, tiene 5 valores:</p>
             <article class="onclm">
@@ -326,22 +375,59 @@ position: sticky;   /*pegada*/
             <h4>Position fixed</h4>
             <p>Este valor <clb>fijará la posición de tu elemento en la pantalla incluso cuando te desplaces</clb> en el navegador <clb>fuera de un contenedor</clb> especifico.</p>
             <hr>
+            
+            <table>
+                <tr>
+                    <th></th>
+                    <th>static</th>
+                    <th>relative</th>
+                    <th>absolute</th>
+                    <th>sticky</th>
+                    <th>fixed</th>
+                </tr>
+                <tr>
+                    <th>¿Se ve afectado dentro de las propiedades (top, bottom,etc.)?</th>
+                    <td>No</td>
+                    <td>Sí</td>
+                    <td>Sí</td>
+                    <td>Sí</td>
+                    <td>Sí</td>
+                </tr>
+                <tr>
+                    <th>¿Se ve afectado por sus etiquetas padre?</th>
+                    <td>-</td>
+                    <td>Sí</td>
+                    <td>No, solo por body/html</td>
+                    <td>Sí</td>
+                    <td>No, solo por body/html</td>
+                </tr>
+                <tr>
+                    <th>¿Se mueve?</th>
+                    <td>No</td>
+                    <td>No</td>
+                    <td>No</td>
+                    <td>Solo dentro de su etiqueta padre</td>
+                    <td>Sí</td>
+                </tr>
+            </table>
+            
+            <hr>
             <h4>Ejemplo:</h4>
             <p class="codepen" data-height="300" data-theme-id="light" data-default-tab="html,result" data-slug-hash="qBevrVE" data-pen-title="Ejemplo positions" data-editable="true" data-user="Laurinto" loading="lazy">
-              <span>See the Pen <a href="https://codepen.io/Laurinto/pen/qBevrVE">
-              Ejemplo positions</a> by Laurinto (<a href="https://codepen.io/Laurinto">@Laurinto</a>)
-              on <a href="https://codepen.io">CodePen</a>.</span>
-              </p>
-<script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
-            
+                <span>See the Pen <a href="https://codepen.io/Laurinto/pen/qBevrVE">
+                Ejemplo positions</a> by Laurinto (<a href="https://codepen.io/Laurinto">@Laurinto</a>)
+                on <a href="https://codepen.io">CodePen</a>.</span>
+                </p>
+  <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+              
+              <hr>
             <hr>
             <h4>Practica con el ejemplo:</h4>
             <p>Copia el código que se encuentra en el <a href="IMAGES/pdf-ej-positions.pdf">enlace</a>, empieza a jugar con el código probando las distintas posiciones y propiedades que hay, y describe en un documento a parte lo que creees que ha cambiado.</p>
             <p>No pasa nada si vuestro código empieza a hacer cosas extrañas, el objetivo es que llegueis a entender el porqué las hace, el resultado es lo de menos.</p>
-            
         </section>
 
-        <section id="sec13">
+        <section>
             <h2>Creación de figuras geometricas</h2>
             <h5>Cuadrado y rectángulo</h5>
             <p class="codepen" data-height="300" data-theme-id="light" data-default-tab="html,result" data-slug-hash="JjgzbON" data-pen-title="Ejemplo cuadrado" data-editable="true" data-user="Laurinto" loading="lazy">
@@ -372,11 +458,11 @@ position: sticky;   /*pegada*/
               </p>
               <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
         </section>
+        </main>
 
         <footer>
             <p>Última actualización: 14/11/2024</p>
         </footer>
         
-
     </body>
 </html>
