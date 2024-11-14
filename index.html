@@ -210,32 +210,14 @@
             </table>
             <hr>
             <h4>Ejemplo:</h4>
-            <div class="contenedor">
-                <div class="ctnwtcss">
-                <h5>HTML</h5>
-                <pre>
-&lt;div&gt;Div 1&lt;/div&gt;
-&lt;div&gt;Div 2&lt;/div&gt;
-&lt;div class="clase"&gt;Div 3&lt;/div&gt;
-                    </pre>
-                </div>
-                <div class="ctnwtcss">
-                    <h5>CSS</h5>
-                    <pre>
-div {
-    width:70px; text-align:center;
-    margin:5px;
-    background-color:blue; color:white;}
-
-.clase{
-    background-color:pink; color:black;}
-                    </pre>
-                </div>
-                <div class="ctnwtcss">
-                    <h5>Muestra</h5>
-                    <iframe src="EXAMPLES/EJ_CLASS_DIVS/index.html" frameborder="0"></iframe>
-                </div>
-            </div>
+            
+                <p class="codepen" data-height="300" data-default-tab="html,result" data-theme-id="light" data-slug-hash="jOgQbVz" data-pen-title="Ejemplo del box model" data-editable="true" data-user="Laurinto" loading="lazy">
+                    <span>See the Pen <a href="https://codepen.io/Laurinto/pen/jOgQbVz">
+                    Ejemplo del box model</a> by Laurinto (<a href="https://codepen.io/Laurinto">@Laurinto</a>)
+                    on <a href="https://codepen.io">CodePen</a>.</span>
+                  </p>
+                  <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+            
         </section>
 
         <section id="sec9">
@@ -244,146 +226,62 @@ div {
                 <p>Unos ejemplos de distintos fondos son:</p>
                 <hr>
                 <h4>Fondo de un color</h4>
-                <p><clp>background-color:</clp> blue<clp>;</clp></p>
-                <div class="contenedor">
-                    <div class="ctnwtcss">
-                        <h5>HTML</h5>
-                        <pre>
-&lt;body&gt;
-    &lt;h1&gt;texto&lt;/h1&gt;
-&lt;/body&gt;
-                        </pre>
-                    </div>
-                    <div class="ctnwtcss">
-                        <h5>CSS</h5>
-                        <pre>
-body{
-    background-color: blue;
-}
-                        </pre>
-                    </div>
-                    <div class="ctnwtcss">
-                        <h5>Muestra</h5>
-                        <iframe src="" frameborder="0"></iframe>
-                    </div>
-                </div>
+                <p class="codepen" data-height="300" data-theme-id="light" data-default-tab="html,result" data-slug-hash="abeBZJa" data-pen-title="Ejemplo fondo con color sólido" data-editable="true" data-user="Laurinto" loading="lazy">
+                    <span>See the Pen <a href="https://codepen.io/Laurinto/pen/abeBZJa">
+                    Ejemplo fondo con color sólido</a> by Laurinto (<a href="https://codepen.io/Laurinto">@Laurinto</a>)
+                    on <a href="https://codepen.io">CodePen</a>.</span>
+                  </p>
+                  <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
                 <hr>
                 <h4>Fondo con una imagen</h4>
-                <p>Estos fondos <clb>se formarán como un mosaico</clb> en función <clb>de</clb> un <clb>tamaño predeterminado</clb> que pondrá el navegador, por lo que <clb>es importante darle</clb> también <clb>el tamaño adecuado</clb> a ese fondo.</p>
-                <p><clp>background-image:</clp> <a>url(“enlace de la imagen”)</a><clp>;</clp></p>
-                
-                <div class="contenedor">
-                    <div class="ctnwtcss">
-                        <h5>HTML</h5>
-                        <pre>
-&lt;body&gt;
-    &lt;h1&gt;texto&lt;/h1&gt;
-&lt;/body&gt;
-                        </pre>
-                    </div>
-                    <div class="ctnwtcss">
-                        <h5>CSS</h5>
-                        <pre>
-body{
-    margin:0;
-    height:100px;
-    background-image: 
-    url("imagen-gato.png");
-}
-                        </pre>
-                    </div>
-                    <div class="ctnwtcss">
-                        <h5>Muestra</h5>
-                        <iframe src="" frameborder="0"></iframe>
-                    </div>
-                </div>
+                <p class="codepen" data-height="300" data-theme-id="light" data-default-tab="html,result" data-slug-hash="gOVLMGa" data-pen-title="Ejemplo imagen de fondo" data-editable="true" data-user="Laurinto" loading="lazy">
+                    <span>See the Pen <a href="https://codepen.io/Laurinto/pen/gOVLMGa">
+                    Ejemplo imagen de fondo</a> by Laurinto (<a href="https://codepen.io/Laurinto">@Laurinto</a>)
+                    on <a href="https://codepen.io">CodePen</a>.</span>
+                  </p>
+                  <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
                 <hr>
                 <h4>Fondo con degradado</h4>
-                <p>Existen muchas formas de hacer degradados, pero la más sencilla es mediante un linear-gradient, que <clb>hace un degradado de arriba hacia abajo</clb>, usando <clb>porcentajes para indicar que color usar en cada parte del degradado</clb>.</p>
-                <p><clp>background:</clp> <clb>linear-gradient(</clb>orange 0%, blue 100%<clb>)</clb><clp>>;</clb></p>
-                <div class="contenedor">
-                    <div class="ctnwtcss">
-                        <h5>HTML</h5>
-                        <pre>
-&lt;body&gt;
-    &lt;h1&gt;texto&lt;/h1&gt;
-&lt;/body&gt;
-                        </pre>
-                    </div>
-                    <div class="ctnwtcss">
-                        <h5>CSS</h5>
-                        <pre>
-body{
-    margin: 0;
-    height: 300px;
-    background: 
-    linear-gradient(orange 0%, blue 100%);
-}
-
-
-                        </pre>
-                    </div>
-                    <div class="ctnwtcss">
-                        <h5>Muestra</h5>
-                        <iframe src="" frameborder="0"></iframe>
-                    </div>
-                </div>
-
+                <p class="codepen" data-height="300" data-theme-id="light" data-default-tab="html,result" data-slug-hash="RwXoRPm" data-pen-title="Ejemplo fondo con degradado" data-editable="true" data-user="Laurinto" loading="lazy">
+                    <span>See the Pen <a href="https://codepen.io/Laurinto/pen/RwXoRPm">
+                    Ejemplo fondo con degradado</a> by Laurinto (<a href="https://codepen.io/Laurinto">@Laurinto</a>)
+                    on <a href="https://codepen.io">CodePen</a>.</span>
+                  </p>
+                  <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
         </section>
 
         <section id="sec10">
             <h2>Fuentes para el texto</h2>
             <p>Estos estilos se usan <clb>para el texto</clb>. Les puedes asignar una variedad bastante inmensa de estilos por la cantidad inmensa de etiquetas que existen, pero he aquí unos ejemplos:</p>
             
-            <div class="contenedor">
-                <div class="ctnwtcss">
-                    <h5>HTML</h5>
-                    <pre>
-&lt;p&gt;Texto con diseño predeterminado&lt;/p&gt;
-&lt;p class="uno"&gt;Texto en rojo&lt;/p&gt;
-&lt;p class="dos"&gt;
-Texto con una fuente de 30px&lt;/p&gt;
-&lt;p class="tres"&gt;
-Texto con la fuente de texto Arial&lt;/p&gt;
-&lt;p class="ct"&gt;Texto con fondo aqua&lt;/p&gt;
-&lt;p class="ci"&gt;Texto en cursiva&lt;/p&gt;
-&lt;p class="seis"&gt;Texto subrayado&lt;/p&gt;
-&lt;p class="siete"&gt;
-Texto con la fuente expandida&lt;/p&gt;
-                    </pre>
-                </div>
-                <div class="ctnwtcss">
-                    <h5>CSS</h5>
-                    <pre>
-.uno{color:red;}
-.dos{font-size: 30px;}
-.tres{font-family: Arial;}
-.cuatro{background-color:aqua;}
-.cinco{font-style: italic;}
-.seis{text-decoration: underline;}
-.siete{font-stretch:expanded;}
-                    </pre>
-                </div>
-                <div class="ctnwtcss">
-                    <h5>Texto</h5>
-                    <iframe src="" frameborder="0"></iframe>
-                </div>
-            </div>
+            <p class="codepen" data-height="300" data-theme-id="light" data-default-tab="html,result" data-slug-hash="VwoVvLY" data-pen-title="Ejemplos fuentes de texto con distintos formatos" data-editable="true" data-user="Laurinto" loading="lazy">
+                <span>See the Pen <a href="https://codepen.io/Laurinto/pen/VwoVvLY">
+                Ejemplos fuentes de texto con distintos formatos</a> by Laurinto (<a href="https://codepen.io/Laurinto">@Laurinto</a>)
+                on <a href="https://codepen.io">CodePen</a>.</span>
+              </p>
+              <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
         </section>
 
         <section id="sec11">
             <h2>Box model</h2>
             <p>Comprende cómo funciona el modelo de caja, que incluye el contenido, padding, border y margin, ya que es esencial para el diseño, en resumen <clb>estos parametros le dan forma a nuestros elementos</clb> dentro del html.</p>
-            <pre>
-width: 300px;           /*Ancho del contenido*/
-height: 150px;          /*Alto del contenido*/
-margin: 15px;           /*Margen entre la caja y el resto de elementos de la página*/
-border: 2px solid red;  /*Borde de la caja*/
-padding: 20px;          /*Espacio entre el borde de la caja y el texto*/
-            </pre>
+            <ul>
+                <li><clp>width:</clp> 300px<clp>;</clp> → <clb>Ancho</clb> del contenido.</li>
+                <li><clp>height:</clp> 150px<clp>;</clp> → <clb>Alto</clb> del contenido.</li>
+                <li><clp>margin:</clp> 15px<clp>;</clp> → <clb>Margen</clb> entre la caja y el resto de elementos de la página.</li>
+                <li><clp>border:</clp> 2px solid red<clp>;</clp> → <clb>Borde</clb> de la caja.</li>
+                <li><clp>padding:</clp> 20px<clp>;</clp> → <clb>Espaciado</clb> entre el borde de la caja y el texto.</li>
+            </ul>
             <p><clb>Se puede trabajar con distintas medidas</clb> y no solo con pixeles, tanto <clb>exactas como los cm, o relativas como el porcentaje (%)</clb>; ejemplos son de las muchas más que hay.</p>
+            <h4>Ejemplo:</h4>
+            <p class="codepen" data-height="300" data-theme-id="light" data-default-tab="html,result" data-slug-hash="jOgQbVz" data-pen-title="Ejemplo del box model" data-editable="true" data-user="Laurinto" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+                <span>See the Pen <a href="https://codepen.io/Laurinto/pen/jOgQbVz">
+                Ejemplo del box model</a> by Laurinto (<a href="https://codepen.io/Laurinto">@Laurinto</a>)
+                on <a href="https://codepen.io">CodePen</a>.</span>
+              </p>
+              <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
             <hr>
-            <p>La mejor forma de coomprender esta función es entrando a una página web cualquiera, dar clic derecho y seleccionar el apartado de "Inspeccionar" y verás a la derecha una sección en la que aparece todo el código fuente de la página junto a un recuadro que te señalará las distintas partes del box model.</p>
+            <p>La mejor forma de comprender esta función es entrando a una página web cualquiera, dar clic derecho y seleccionar el apartado de "Inspeccionar". Verás a la derecha una sección, en la que aparece todo el código fuente de la página junto a un recuadro de una sección llamada "Computed", a la derecha o debajo del código HTML (en función del tamaño de la pantalla que tengais), que te señalará las distintas partes del box model.</p>
         </section>
 
         <section id="sec12">
@@ -436,45 +334,37 @@ position: sticky;   /*pegada*/
         <section id="sec13">
             <h2>Creación de figuras geometricas</h2>
             <h5>Cuadrado y rectángulo</h5>
-            <pre>
-.cuadrado{
-    width: 100px;
-    height:  100px;
-    background: aqua;
-}
-            </pre>
+            <p class="codepen" data-height="300" data-theme-id="light" data-default-tab="html,result" data-slug-hash="JjgzbON" data-pen-title="Ejemplo cuadrado" data-editable="true" data-user="Laurinto" loading="lazy">
+                <span>See the Pen <a href="https://codepen.io/Laurinto/pen/JjgzbON">
+                Ejemplo cuadrado</a> by Laurinto (<a href="https://codepen.io/Laurinto">@Laurinto</a>)
+                on <a href="https://codepen.io">CodePen</a>.</span>
+              </p>
+              <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
             <h5>Círculo</h5>
-            <pre>
-.circulo{
-    width: 100px;
-    height:  100px;
-    border-radius: 50%;
-    background: green;
-}
-            </pre>
+            <p class="codepen" data-height="300" data-theme-id="light" data-default-tab="html,result" data-slug-hash="KKOENZP" data-pen-title="Untitled" data-editable="true" data-user="Laurinto" loading="lazy">
+                <span>See the Pen <a href="https://codepen.io/Laurinto/pen/KKOENZP">
+                Untitled</a> by Laurinto (<a href="https://codepen.io/Laurinto">@Laurinto</a>)
+                on <a href="https://codepen.io">CodePen</a>.</span>
+              </p>
+              <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
             <h5>Triangulo</h5>
-            <pre>
-.triangulo{
-    width: 0;
-    height: 0;
-    border-left: 100px solid orange;
-    border-top: 50px solid transparent;
-    border-bottom: 100px solid transparent;
-}
-            </pre>
+            <p class="codepen" data-height="300" data-theme-id="light" data-default-tab="html,result" data-slug-hash="poMYNpo" data-pen-title="Untitled" data-editable="true" data-user="Laurinto" loading="lazy">
+                <span>See the Pen <a href="https://codepen.io/Laurinto/pen/poMYNpo">
+                Untitled</a> by Laurinto (<a href="https://codepen.io/Laurinto">@Laurinto</a>)
+                on <a href="https://codepen.io">CodePen</a>.</span>
+              </p>
+              <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
             <h5>Rombo</h5>
-            <pre>
-.rombo{
-    width: 100px;
-    height:  100px;
-    transform: rotate(45 deg);
-    background: pink;
-}
-            </pre>
+            <p class="codepen" data-height="300" data-theme-id="light" data-default-tab="html,result" data-slug-hash="jOgJVag" data-pen-title="Untitled" data-editable="true" data-user="Laurinto" loading="lazy">
+                <span>See the Pen <a href="https://codepen.io/Laurinto/pen/jOgJVag">
+                Untitled</a> by Laurinto (<a href="https://codepen.io/Laurinto">@Laurinto</a>)
+                on <a href="https://codepen.io">CodePen</a>.</span>
+              </p>
+              <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
         </section>
 
         <footer>
-            <p>Última actualización: 12/11/2024</p>
+            <p>Última actualización: 14/11/2024</p>
         </footer>
         
 
