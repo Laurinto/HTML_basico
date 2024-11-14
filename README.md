@@ -9,3 +9,4 @@ Esta web está en desarrollo, puede sufrir cambios abruptos de un día para otro
 - Se han añadido nuevas secciónes que estan en desarrollo.
 - Se ha añadido un botón en el título que de momento no lleva a ningún lado.
 - Hubo cambios en la paleta de colores del modo oscuro.
+- Se ha añadido una carpeta de ICONS.
