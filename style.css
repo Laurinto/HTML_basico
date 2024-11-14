@@ -6,98 +6,65 @@
     --cl-blue:#4389b8;
     --cl-yellow:#c07e31;
     --cl-pink: #c062d8;
+    --cl-shadow:#000000;
 }
 
 @media (prefers-color-scheme: dark){
     :root{
-        --html-background: #04131e;
+        --html-background: #050d13; /*#04131e*/
         --cl-background: #3c445d;
         --cl-text: #fefefe;
-        --cl-pre:  #312e5f;
+        --cl-pre:  #312e5f; /*#312e5f*/
         --cl-blue: #53a9e2;
         --cl-yellow: #dddd5c;
         --cl-pink: #d37de9;
         --cl-grd:#53618a;
+        --cl-shadow:#8fcdf72d;
+        .contact{img{filter: brightness(0) saturate(100%) invert(100%) sepia(4%) saturate(15%) hue-rotate(49deg) brightness(103%) contrast(102%);}}
     }
 }
 
-@font-face {
-    font-family: "OpenSans";
-    src: url(FONTS/OpenSans-VariableFont_wdth\,wght.ttf) format("truetype");
-}
+@font-face {font-family: "OpenSans";src: url(FONTS/OpenSans-VariableFont_wdth\,wght.ttf) format("truetype");}
+@font-face {font-family: "Impact";src: url(FONTS/impact.ttf) format("truetype");}
 
-@font-face {
-    font-family: "Impact";
-    src: url(FONTS/impact.ttf) format("truetype");
-}
+@media(max-width: 768px){.ctnwtcss{width: calc(50% - 20px);}}
+@media(max-width: 425px){.ctnwtcss{width: calc(100%);}}
 
-html{
-    background-color: var(--html-background); margin: 10%;
-    scroll-behavior: smooth;
-}
+html{background-color: var(--html-background); margin: 10%;scroll-behavior: smooth;}
 
 p{color: var(--cl-text); font-family: OpenSans;}
-h1{color:var(--cl-text); font-family: Impact; font-size: 120px;  letter-spacing: 3px; text-align: center;
-    text-decoration: none; margin: 0; font-weight: lighter;}
-h2{color:var(--cl-text); font-family: Impact; font-size: 40px;  letter-spacing: 3px; 
-    text-decoration: none; margin: 0; font-weight: lighter;}
-h3{color:var(--cl-text); font-family: Impact; font-size: 30px;  letter-spacing: 3px; 
-    text-decoration: none; margin: 0; font-weight: lighter;}
-h4{color:var(--cl-text); font-family: Impact; font-size: 20px;  letter-spacing: 3px; 
-text-decoration: none; margin: 0; font-weight: lighter;}
-h5{color:var(--cl-text); font-family: Impact; font-size: 18px;  letter-spacing: 3px; 
-    text-decoration: none; margin: 0; font-weight: lighter;}
-summary{color:var(--cl-text); font-family: Impact; font-size: 20px;  letter-spacing: 3px; 
-    text-decoration: none; margin: 0; font-weight: lighter;}
+h1{color:var(--cl-text); font-family: Impact; font-size: 10vw; letter-spacing: 3px; text-align: center;text-decoration: none; margin: 0; font-weight: lighter;}
+h2{color:var(--cl-text); font-family: Impact; font-size: 3vw; letter-spacing: 3px; text-decoration: none; margin: 0; font-weight: lighter;}
+h3{color:var(--cl-text); font-family: Impact; font-size: 30px; letter-spacing: 3px; text-decoration: none; margin: 0; font-weight: lighter;}
+h4{color:var(--cl-text); font-family: Impact; font-size: 20px; letter-spacing: 3px; text-decoration: none; margin: 0; font-weight: lighter;}
+h5{color:var(--cl-text); font-family: Impact; font-size: 18px; letter-spacing: 3px; text-decoration: none; margin: 0; font-weight: lighter;}
+summary{color:var(--cl-text); font-family: Impact; font-size: 20px; letter-spacing: 3px; text-decoration: none; margin: 0; font-weight: lighter;}
 li{color: var(--cl-text); font-family: OpenSans;}
-
 a{color:var(--cl-yellow); text-decoration: none;}
-clb{color: var(--cl-blue);}
-clp{color: var(--cl-pink);}
+
+table{border-collapse: collapse; margin:20px auto; display: block; overflow: auto; max-width: 768; z-index: 2;}
+th, tr, td{padding:10px; border: 2px solid var(--cl-text);color: var(--cl-text); font-family: OpenSans; overflow: auto;}
+
+section{border-radius: 5px;margin: 30px 0 30px;padding: 20px;background: var(--cl-background);box-shadow: 0px 5px 30px 0px var(--cl-shadow);article > p{list-style-type: none; color: var(--cl-text); font-family: OpenSans;}}
 
 nav{column-count: 2;}
 aside{p, a{color: var(--cl-text);}}
 iframe{background: #fff; margin: 20px 0; border-radius: 5px; vertical-align: middle;}
+pre{background: var(--cl-pre); color: var(--cl-text); border-radius: 5px;padding: 10px;overflow: auto;}
 
-pre{background: var(--cl-pre); color: var(--cl-text); border-radius: 5px;
-    padding: 10px;
-    overflow: auto;
-}
+clb{color: var(--cl-blue);}clp{color: var(--cl-pink);}
+
 .nncc{column-count: 2;}
 
 .contenedor{width: 100%; display: flex; gap:20px; flex-wrap: wrap; margin-top: 10px;}
 .ctnwtcss{display: flex;width: calc(33.3% - 20px); flex-direction: column; position: relative;}
 
-@media(max-width: 768px){.ctnwtcss{width: calc(50% - 20px);}}
-@media(max-width: 425px){.ctnwtcss{width: calc(100%);}}
+.title{background: var(--cl-pre);border-radius:5px;margin:0 0 30%;p,h2{text-align: center;}}
+.contact{border-radius: 50%; width: 50px;height: 50px; background: var(--cl-pre);box-shadow: 0px 5px 30px 0px var(--cl-shadow); position:absolute;top:6%;right:3%; display:flex; justify-content: center; align-items: center; color: var(--cl-text);img{width: 30px;height: 30px;filter: brightness(0) saturate(100%) invert(8%) sepia(47%) saturate(4406%) hue-rotate(231deg) brightness(100%) contrast(99%);}}
 
-.onclm{}
 
-.title{background: var(--cl-pre);border-radius:5px;p,h2{text-align: center;}}
+.codepen{height: 700px;box-sizing: border-box;display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;}
 
-section{
-    border-radius: 5px;
-    margin: 30px 0 30px;
-    padding: 20px;
-    background: var(--cl-background);
+/*aside{position: sticky;}*/
 
-article > p{list-style-type: none; color: var(--cl-text); font-family: OpenSans;}}
-
-.ex-with-css{column-count: 3; border:20px  0;}
-.ex-with-html{column-count: 2; margin: 0 auto; pre{margin-top: 5px;}}
-img{margin: 0 auto; border-radius: 5px;}
-
-table{border-collapse: collapse; margin:20px auto;}
-th, tr, td{padding:10px; border: 2px solid var(--cl-text);
-    color: var(--cl-text); font-family: OpenSans;}
-
-.codepen{
-    height: 700px;
-    box-sizing: border-box;
-    display: flex; 
-    align-items: center; 
-    justify-content: center; 
-    border: 2px solid; 
-    margin: 1em 0; 
-    padding: 1em;
-}
+ntpr{color:#6b1f1fde; background: #e2b3b373; border-radius: 20px; padding: 10px;font-weight: bold;}
