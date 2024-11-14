@@ -90,3 +90,14 @@ img{margin: 0 auto; border-radius: 5px;}
 table{border-collapse: collapse; margin:20px auto;}
 th, tr, td{padding:10px; border: 2px solid var(--cl-text);
     color: var(--cl-text); font-family: OpenSans;}
+
+.codepen{
+    height: 700px;
+    box-sizing: border-box;
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    border: 2px solid; 
+    margin: 1em 0; 
+    padding: 1em;
+}
