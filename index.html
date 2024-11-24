@@ -43,6 +43,10 @@
                 <p><a href="#sec14">14. Box model</a></p>
                 <p><a href="#sec15">15.Posiciones</a></p>
                 <p><a href="#sec16">16.Creación de figuras geometricas</a></p>
+                <p><a href="#sec17">17. Destacar elementos</a></p>
+                <p><a href="#sec18">18. Animaciones</a></p>
+                <p><a href="#sec19">19. Creación de botones con &lt;button&gt;</a></p>
+                <p><a href="#sec20">20. Formularios con &lt;input&gt;, &lt;label&gt; y &lt;textarea&gt;</a></p>
             </nav>
             <hr>
         </aside>
@@ -447,10 +451,77 @@ position: sticky;   /*pegada*/
               </p>
               <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
         </section>
+        <section>
+            <h2>Destacar elementos con “:hover”</h2>
+            <p>: hover es una pseudo-clase que se activa cuando pasamos el ratón en un elemento. Su principal uso es el de destacar cosas que son clicables. Su forma de usarse en CSS es declarándose junto a la etiqueta que quieres que la gente pase el ratón.</p>
+            <p>En esta tabla de ejemplo vemos en el código que cuando pasemos el cursor por encima el div sera de color rojo</p>
+            <table>
+                <tr>
+                    <th>HTML</th><th>CSS</th>
+                </tr>
+                <tr>
+                    <td>etiqueta :hover{ propiedad que le quieras dar a la etiqueta }</td><td>.clase-de-la-etiqueta :hover{ propiedad que le quieras dar a la etiqueta }</td>
+                </tr>
+                <tr>
+                    <td>div { color: blue;}</td><td>div :hover{color: red;}</td>
+                </tr>
+            </table>
+
+            <p class="codepen" data-height="300" data-theme-id="light" data-default-tab="html,result" data-slug-hash="abeebwN" data-pen-title="Ejemplo &amp;quot;:hover&amp;quot;" data-editable="true" data-user="Laurinto" loading="lazy">
+                <span>See the Pen <a href="https://codepen.io/Laurinto/pen/abeebwN">
+                Ejemplo &quot;:hover&quot;</a> by Laurinto (<a href="https://codepen.io/Laurinto">@Laurinto</a>)
+                on <a href="https://codepen.io">CodePen</a>.</span>
+              </p>
+              <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+
+        </section>
+
+        <section>
+            <h2>Animaciones</h2>
+            <p>Sabiendo la propiedad :hover, cabe destacar que existe la opción de destacar estos elementos mediante transiciones que pueden durar un tiempo definido. La principal forma de hacerlo es mediante la propiedad.</p>
+            <p>He aquí un ejemplo con el ejemplo de :hover</p>
+            <p class="codepen" data-height="300" data-theme-id="light" data-default-tab="html,result" data-slug-hash="qEWWapp" data-pen-title="Ejemplo animación transition" data-editable="true" data-user="Laurinto" loading="lazy">
+                <span>See the Pen <a href="https://codepen.io/Laurinto/pen/qEWWapp">
+                Ejemplo animación transition</a> by Laurinto (<a href="https://codepen.io/Laurinto">@Laurinto</a>)
+                on <a href="https://codepen.io">CodePen</a>.</span>
+              </p>
+              <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+        </section>
+
+        <section>
+            <h2>Creación de botones con &lt;button&gt;</h2>
+            <p>&lt;button&gt; es una etiqueta que se usa para la representación de un botón. Al mostrarse sin estilo tiene una presentación así:</p>
+            <p class="codepen" data-height="300" data-theme-id="light" data-default-tab="html,result" data-slug-hash="BaXXyvo" data-pen-title="Ejemplo &amp;lt;button&amp;gt;" data-editable="true" data-user="Laurinto" loading="lazy">
+                <span>See the Pen <a href="https://codepen.io/Laurinto/pen/BaXXyvo">
+                Ejemplo &lt;button&gt;</a> by Laurinto (<a href="https://codepen.io/Laurinto">@Laurinto</a>)
+                on <a href="https://codepen.io">CodePen</a>.</span>
+              </p>
+              <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+              <p>Por defecto tendrá su propio hover, pero a la hora de empezar a darle unas propiedades en específico ya desaparecerá.</p>
+        </section>
+        <section>
+            <h2>Formularios con &lt;input&gt;, &lt;label&gt; y &lt;textarea&gt;</h2>
+            <p>La etiqueta &lt;label&gt; representa el título de para un elemento en una interfaz de usuario. Se usa junto a &lt;input&gt; y &lt;textarea&gt; para que forme distintos tipos de elementos en una página web, tanto a nivel de programación y de visualización.</p>
+            <p>&lt;input&gt; es una etiqueta que se usa para crear diversos controles interactivos. Cada una de estos controles se pueden declarar su forma poniendo type=”...” dentro de la etiqueta.</p>
+            <p>He aquí unas muestras de las posibilidades que se le puede dar:</p>
+            <p class="codepen" data-height="300" data-theme-id="light" data-default-tab="html,result" data-slug-hash="GRVVdve" data-pen-title="Ejemplos &amp;lt;label&amp;gt; + &amp;lt;input&amp;gt; + &amp;lt;textarea&amp;gt;" data-editable="true" data-user="Laurinto" loading="lazy">
+                <span>See the Pen <a href="https://codepen.io/Laurinto/pen/GRVVdve">
+                Ejemplos &lt;label&gt; + &lt;input&gt; + &lt;textarea&gt;</a> by Laurinto (<a href="https://codepen.io/Laurinto">@Laurinto</a>)
+                on <a href="https://codepen.io">CodePen</a>.</span>
+              </p>
+              <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+              <p>La etiqueta &lt;textarea&gt; tiene un mismo fin que algunos tipos de input, pero la parte que diferencia esta etiqueta con la otra es que se trata de un área de texto extensible cuyo fin único es insertar texto independientemente de la temática.</p>
+              <p class="codepen" data-height="300" data-theme-id="light" data-default-tab="html,result" data-slug-hash="Jjggvrp" data-pen-title="Ejemplo &amp;lt;textarea&amp;gt;" data-editable="true" data-user="Laurinto" loading="lazy">
+                <span>See the Pen <a href="https://codepen.io/Laurinto/pen/Jjggvrp">
+                Ejemplo &lt;textarea&gt;</a> by Laurinto (<a href="https://codepen.io/Laurinto">@Laurinto</a>)
+                on <a href="https://codepen.io">CodePen</a>.</span>
+              </p>
+              <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+            </section>
         </main>
 
         <footer>
-            <p>Última actualización: 15/11/2024</p>
+            <p>Última actualización: 24/11/2024</p>
         </footer>
         
     </body>
