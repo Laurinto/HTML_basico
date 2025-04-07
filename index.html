@@ -3,30 +3,21 @@
     <head>
         <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>HTML Básico</title>
-        <meta name="description" content="Bases para el entendimiento básico de HTML, CSS y JavaScript">
-        <meta property="og:title" content="HTML, CSS y JavaSript Básico">
+        <meta name="description" content="Bases para el entendimiento básico de HTML y CSS">
+        <meta property="og:title" content="HTML y CSS Básico">
 
         <link rel="stylesheet" href="style.css">
         <link rel="icon" type="image/png" href="">
 
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     </head>
-    <body >
-        <div class="up-ref" id="up"></div>
-        <section class="title" >
-            <p>Proyecto realizado por Laura.U, Ian y Coral</p>
-            <h1>HTML BÁSICO</h1>
-            <h2>HTML, CSS y JS</h2>
-            <div class="contact">
-                <imput type="color" value="var(--cl-text)"></imput>
-                <img src="ICONS/bxs-contact.svg">
-            </div>
-        </section>
-        <main>
-            <div class="up"><a href="#up"><img src="ICONS/row-up.png"></a></div>
+    <body>
+
         <aside>
-            <hr>
-            <header><h2>Índice</h2></header>
-            <nav>
+            <div>
+                <p>Índice</p>
+                
+                <nav>
                 <p><a href="#sec1">01. Introducción</a></p>
                 <p><a href="#sec2">02. Creación de un documento HTML y su comportamiento</a></p>
                 <p><a href="#sec3">03. Etiquetas principales</a></p>
@@ -47,14 +38,26 @@
                 <p><a href="#sec18">18. Animaciones</a></p>
                 <p><a href="#sec19">19. Creación de botones con &lt;button&gt;</a></p>
                 <p><a href="#sec20">20. Formularios con &lt;input&gt;, &lt;label&gt; y &lt;textarea&gt;</a></p>
-            </nav>
-            <hr>
+                </nav>
+            </div>
+            <div>
+                <span class="material-symbols-outlined">alternate_email</span>
+            </div>
         </aside>
 
-        <section id="sec1">
+        <header class="title">
+            <p>Proyecto realizado por Laura.U, Ian y Coral</p>
+            <h1>HTML BÁSICO</h1>
+            <h2>HTML y CSS</h2>
+            
+        </header>
+
+        <main>
+            <div class="up"><a href="/#"><span class="material-symbols-outlined">expand_circle_up</span></a></div>
+
+            <section id="sec1">
             <h2>Introducción</h2>
-            <p>HTML es un lenguaje de marcas que </p>
-            <p>En el lenguaje HTML se pueden usar tanto mayúsculas y minúsculas y estas seránreconocidas igual, pues la sintaxis no diferencia entre ese tipo de caracteres.</p>
+            <p>En el lenguaje HTML se pueden usar tanto mayúsculas y minúsculas y estas serán reconocidas igual, pues la sintaxis no diferencia entre ese tipo de caracteres.</p>
             <p>Ejemplo:<html> </HTML> funcionan igual al <html></html> pero se recomienda usar minúsculas,ya que es más cómodo y ordenado.</p>
 
             <h3>Uso de VS Code</h3>
@@ -72,17 +75,17 @@
                 <li>Spanish Language Pack for VSCode → en caso de que estés usando la versión de escritorio y no te guste tener el programa en inglés, puedes descargar esta extensión para tenerlo en español.</li>
                 <li>Error lens → Te permite ver los errores que tienes en el código de forma inmediata, mostrando en la línea que es lo que falta.</li>
             </ul>
-        </section>
+            </section>
 
-        <section id="sec2">
+            <section id="sec2">
             <h2>Creación de un documento HTML y su comportamiento</h2>
             <p></p>
 
             <h3>¿Por qué se usa intex.html?</h3>
             <p>El archivo index.html es un estándar establecido que facilita la navegación y la gestión de sitios web. Los servidores web tratan index.html como la página predeterminada en un directorio, lo que permite que los usuarios accedan fácilmente a la página principal sin tener que escribir el nombre completo del archivo en la URL. Resumidamente, el index es necesario a ser reconocido y el .html para que te reconozca el codigo.</p>
-        </section>
-    
-        <section id="sec3">
+            </section>
+        
+            <section id="sec3">
             <article>
             <h2>Etiquetas principales</h2>
             <table>
@@ -118,9 +121,9 @@
             <article>
                 <h3>Etiquetas para crear tablas</h3>
             </article>
-        </section>
+            </section>
 
-        <section id="sec4">
+            <section id="sec4">
             <h2>Estructura del HTML</h2>
             <p>La estructura en HTML es bastante importante para mantener un orden y para que tanto nosotros como los demás puedan saber en qué parte del código estamos.</p>
             <p>Aunque no sea obligatorio, pues hay páginas que usan muchos &lt;div&gt; o &lt;span&gt; para estructurar las páginas, el abuso de estos pueden dar a un código sucio y desordenado que para algunos podría llegar a ser ilegible, y por ello es mejor usar estas etiquetas sintácticas.</p>
@@ -141,9 +144,9 @@
                 <summary>Ejemplo visual</summary>
                 <img src="estructura-html.png">imagen provisional</img>
             </details>
-        </section>
+            </section>
 
-        <section id="sec5">
+            <section id="sec5">
             <h2 id="enl">Insertar enlaces</h2>
             <p>Sintaxis: <clp>&lt;a</clp> <a>href="URL"</a>&gt;Contenido del enlace<clp>&lt;/a&gt;</clp></p>
             <p>Esta sintaxis <clb>crea un enlace</clb>, pero poco sirve si no tiene nada que enlazar, por lo que <clb>tiene que venir acompañado del atributo</clb> <a>href</a>.</p>
@@ -168,9 +171,9 @@
                 on <a href="https://codepen.io">CodePen</a>.</span>
               </p>
               <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
-        </section>
-        
-        <section id="sec6">
+            </section>
+
+            <section id="sec6">
             <header><h2>Listas ordenadas &lt;ol&gt; y desordenadas &lt;ul&gt;</h2></header>
             <p>La etiqueta <clp>&lt;ul&gt;</clp> es un elemento de bloque utilizado para definir <clb>listas desordenadas</clb> (aquellas en las que el orden de los elementos no es relevante) <clb>mostradas con puntos</clb> a su izquierda, y la etiqueta <clp>&lt;ol&gt;</clp> es uno que define <clb>listas ordenadas</clb>, <clb>enumeradas</clb> del uno hasta el número de elementos que hayan.</p>
             <p><clb>Los elementos</clb> en ambos tipos de la lista <clb>se definen con</clb> el elemento <clp>&lt;li&gt;</clp>.</p>
@@ -181,9 +184,9 @@
                 on <a href="https://codepen.io">CodePen</a>.</span>
               </p>
               <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
-        </section>
+            </section>
 
-        <section id="sec7">
+            <section id="sec7">
             <header><h2>Insertar videos de youtube mediante &lt;iframe&gt;</h2></header>
             <p>1. Busca el video que te interesa poner en tu HTML y <clb>busca la sección "compartir"</clb> que hay debajo del título del video.</p>
             <img src="IMAGES/ifrma-dm.png">
@@ -191,9 +194,9 @@
             <img src="IMAGES/ifrmb-dm.png">
             <p>3. <clb>Copia el código destacado</clb> que se muestra en la imagen, es lo esencial que hace que se pueda mostrar el iframe en la web.</p>
             <img src="IMAGES/ifrmc-dm.png">
-        </section>
+            </section>
 
-        <section id="sec8"><h2>&lt;summary&gt; + &lt;details&gt;</h2>
+            <section id="sec8"><h2>&lt;summary&gt; + &lt;details&gt;</h2>
             <p>Se usa para <clb>crear secciones en las que al dar clic en el título <clp>&lt;summary&gt;</clp> de la sección, la información</clb> que se encontraba oculta, <clb>se muestra</clb>.</p>
             <p class="codepen" data-height="300" data-theme-id="light" data-default-tab="html,result" data-slug-hash="mdNoXOX" data-pen-title="Ejemplo summary" data-editable="true" data-user="Laurinto" loading="lazy">
                 <span>See the Pen <a href="https://codepen.io/Laurinto/pen/mdNoXOX">
@@ -201,14 +204,14 @@
                 on <a href="https://codepen.io">CodePen</a>.</span>
               </p>
               <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
-        </section>
+            </section>
 
-        <section id="sec9"><h2>Imágenes y GIFs con &lt;img&gt;</h2>
+            <section id="sec9"><h2>Imágenes y GIFs con &lt;img&gt;</h2>
             <p>Sintaxis: <clp>&lt;img <a>src="foto.png"</a> <clb>alt=”descripcion”</clb>&gt;</clp></p>
         <p>La etiqueta <img> no se cierra porque es un elemento vacío (no tiene contenido en su interior), solo sirve para <clb>mostrar una imagen</clb> mediante el atributo <a>src</a> (source), que <a>indica la ubicación de la imagen</a>,y el parametro <clb>alt</clb> es para darle una <clb>descripcion a la imagen</clb> para perosnas que tengan alguna discapcidad visual, o para el caso en el que la imagen estér rota.</p>
-        </section>
+            </section>
 
-        <section id="sec10">
+            <section id="sec10">
             <h2>Creación del archivo y enlace de CSS</h2>
             <article>
                 <h3>Creación del archivo CSS en VS Code</h3>
@@ -226,9 +229,9 @@
 
                 <p>Aunque también se puede insertar el CSS en el propio HTML con &lt;style&gt;, pero <clb>por temas de organización es mejor tenerlo a parte</clb>.</p>
             </article>
-        </section>
+            </section>
 
-        <section id="sec11">
+            <section id="sec11">
             <h2>Clases y formato</h2>
             <p>A la hora de estilar una página, se suele plantear un aspecto predeterminado para todos los elementos y usarlo de plantilla para toda la página, es por eso que se usan las etiquetas creadas en el CSS.</p>
             <p>Pero, hay veces <clb>donde necesitamos que elementos concretos tengan un aspecto distinto</clb>, y por eso <clb>necesitaremos colocar unos atributos llamados</clb> <clp>class</clp>, al que le pondremos un nombre en concreto para que en el CSS pueda identificar cuándo aplicar esas características concretas.</p>
@@ -260,9 +263,9 @@
                   </p>
                   <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
             
-        </section>
+            </section>
 
-        <section id="sec12">
+            <section id="sec12">
             <h2>Fondos y colores</h2>
             <p>Los fondos <clb>se pueden usar de distintas formas</clb> en función del diseño que le quieres dar.</p>
                 <p>Unos ejemplos de distintos fondos son:</p>
@@ -290,9 +293,9 @@
                     on <a href="https://codepen.io">CodePen</a>.</span>
                   </p>
                   <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
-        </section>
+            </section>
 
-        <section id="sec13">
+            <section id="sec13">
             <h2>Fuentes para el texto</h2>
             <p>Estos estilos se usan <clb>para el texto</clb>. Les puedes asignar una variedad bastante inmensa de estilos por la cantidad inmensa de etiquetas que existen, pero he aquí unos ejemplos:</p>
             
@@ -302,9 +305,9 @@
                 on <a href="https://codepen.io">CodePen</a>.</span>
               </p>
               <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
-        </section>
+            </section>
 
-        <section id="sec14">
+            <section id="sec14">
             <h2>Box model</h2>
             <p>Comprende cómo funciona el modelo de caja, que incluye el contenido, padding, border y margin, ya que es esencial para el diseño, en resumen <clb>estos parametros le dan forma a nuestros elementos</clb> dentro del html.</p>
             <ul>
@@ -324,9 +327,9 @@
               <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
             <hr>
             <p>La mejor forma de comprender esta función es entrando a una página web cualquiera, dar clic derecho y seleccionar el apartado de "Inspeccionar". Verás a la derecha una sección, en la que aparece todo el código fuente de la página junto a un recuadro de una sección llamada "Computed", a la derecha o debajo del código HTML (en función del tamaño de la pantalla que tengais), que te señalará las distintas partes del box model.</p>
-        </section>
+            </section>
 
-        <section id="sec15">
+            <section id="sec15">
             <h2>Posiciones</h2>
             <p>Nuestra propiedad posición, tiene 5 valores:</p>
             <article class="onclm">
@@ -418,9 +421,9 @@ position: sticky;   /*pegada*/
             <h4>Practica con el ejemplo:</h4>
             <p>Copia el código que se encuentra en el <a href="IMAGES/pdf-ej-positions.pdf">enlace</a>, empieza a jugar con el código probando las distintas posiciones y propiedades que hay, y describe en un documento a parte lo que creees que ha cambiado.</p>
             <p>No pasa nada si vuestro código empieza a hacer cosas extrañas, el objetivo es que llegueis a entender el porqué las hace, el resultado es lo de menos.</p>
-        </section>
+            </section>
 
-        <section id="sec16">
+            <section id="sec16">
             <h2>Creación de figuras geometricas</h2>
             <h5>Cuadrado y rectángulo</h5>
             <p class="codepen" data-height="300" data-theme-id="light" data-default-tab="html,result" data-slug-hash="JjgzbON" data-pen-title="Ejemplo cuadrado" data-editable="true" data-user="Laurinto" loading="lazy">
@@ -450,8 +453,8 @@ position: sticky;   /*pegada*/
                 on <a href="https://codepen.io">CodePen</a>.</span>
               </p>
               <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
-        </section>
-        <section>
+            </section>
+            <section>
             <h2>Destacar elementos con “:hover”</h2>
             <p>: hover es una pseudo-clase que se activa cuando pasamos el ratón en un elemento. Su principal uso es el de destacar cosas que son clicables. Su forma de usarse en CSS es declarándose junto a la etiqueta que quieres que la gente pase el ratón.</p>
             <p>En esta tabla de ejemplo vemos en el código que cuando pasemos el cursor por encima el div sera de color rojo</p>
@@ -474,9 +477,9 @@ position: sticky;   /*pegada*/
               </p>
               <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
 
-        </section>
+            </section>
 
-        <section>
+            <section>
             <h2>Animaciones</h2>
             <p>Sabiendo la propiedad :hover, cabe destacar que existe la opción de destacar estos elementos mediante transiciones que pueden durar un tiempo definido. La principal forma de hacerlo es mediante la propiedad.</p>
             <p>He aquí un ejemplo con el ejemplo de :hover</p>
@@ -486,9 +489,9 @@ position: sticky;   /*pegada*/
                 on <a href="https://codepen.io">CodePen</a>.</span>
               </p>
               <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
-        </section>
+            </section>
 
-        <section>
+            <section>
             <h2>Creación de botones con &lt;button&gt;</h2>
             <p>&lt;button&gt; es una etiqueta que se usa para la representación de un botón. Al mostrarse sin estilo tiene una presentación así:</p>
             <p class="codepen" data-height="300" data-theme-id="light" data-default-tab="html,result" data-slug-hash="BaXXyvo" data-pen-title="Ejemplo &amp;lt;button&amp;gt;" data-editable="true" data-user="Laurinto" loading="lazy">
@@ -498,8 +501,8 @@ position: sticky;   /*pegada*/
               </p>
               <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
               <p>Por defecto tendrá su propio hover, pero a la hora de empezar a darle unas propiedades en específico ya desaparecerá.</p>
-        </section>
-        <section>
+            </section>
+            <section>
             <h2>Formularios con &lt;input&gt;, &lt;label&gt; y &lt;textarea&gt;</h2>
             <p>La etiqueta &lt;label&gt; representa el título de para un elemento en una interfaz de usuario. Se usa junto a &lt;input&gt; y &lt;textarea&gt; para que forme distintos tipos de elementos en una página web, tanto a nivel de programación y de visualización.</p>
             <p>&lt;input&gt; es una etiqueta que se usa para crear diversos controles interactivos. Cada una de estos controles se pueden declarar su forma poniendo type=”...” dentro de la etiqueta.</p>
@@ -521,8 +524,7 @@ position: sticky;   /*pegada*/
         </main>
 
         <footer>
-            <p>Última actualización: 24/11/2024</p>
+            <p>2025 - Laura U.</p>
         </footer>
-        
     </body>
 </html>

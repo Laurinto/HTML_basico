@@ -14,3 +14,8 @@ Esta web está en desarrollo, puede sufrir cambios abruptos de un día para otro
 15/11/2024
 - Se ha habilitado de nuevo el índice.
 - Se ha añadido un botón para la vuelta al inicio de la página.
+
+07/04/2025
+- Se ha renovado el código de la página en general.
+- Se ha mejorado la interfaz en modo claro.
+- Se ha quitado temporalmente el modo oscuro de la página.
