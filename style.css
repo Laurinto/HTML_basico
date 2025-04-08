@@ -6,52 +6,30 @@
     --cl-bk-code: #B8B7DA;
     --cl-tx-code: #302F79;
     
-    /*--html-background: #fefefe;
-    --cl-background: #a0e0f4;
-    --cl-blue:#4389b8;
-    --cl-yellow:#c07e31;
-    --cl-pink: #c062d8; */
+    --cl-blue:#2fa1ed;
+    --cl-yellow:#cdb059; 
+    --cl-pink: #c870bc; 
+
+    color: var(--cl-text);
 }
 
 @media (prefers-color-scheme: dark){
     *{
-    --cl-background:#d7e1eb;
-    --cl--bk-header: #A5BCCF;
-    --cl-text: #254E70;
-    --cl-bk-main: #f8fbff;
-    --cl-bk-code: #B8B7DA;
-    --cl-tx-code: #302F79;
+    --cl-background: #011424;
+    --cl--bk-header: #052B4B;
+    --cl-text: #92b5d2;
+    --cl-bk-main: #0F3F66;
+    --cl-bk-code: #0A094E;
+    --cl-tx-code: #8e8bca;
 
-        /*
-        --html-background: #050d13;
-        --cl-background: #3c445d;
-        --cl-text: #fefefe;
-        --cl-blue: #53a9e2;
-        --cl-yellow: #dddd5c;
-        --cl-pink: #d37de9; */
+    --cl-blue: #53a9e2;
+    --cl-yellow: #B2922F;
+    --cl-pink: #d37de9;
     }
 }
 
 @font-face {font-family: "OpenSans";src: url(fonts/OpenSans-VariableFont_wdth\,wght.ttf) format("truetype");}
 @font-face {font-family: "BebasNue";src: url(fonts/BebasNeue-Regular.ttf) format("truetype");}
-
-@media(max-width: 768px){.ctnwtcss{width: calc(50% - 20px);}}
-@media(max-width: 425px){.ctnwtcss{width: calc(100%);}}
-
-html{
-    all:unset;
-    width: clamp(auto, 1100px);
-    background-color: var(--cl-background);
-    scroll-behavior: smooth;
-
-    *{
-        color: var(--cl-text);
-    }
-}
-
-body{
-    all:unset;
-}
 
 /*text-style*/
 
@@ -72,30 +50,45 @@ h4{font-size: 1.4em;}
 h5{font-size: 1.2em;}
 summary{font-size: 1.4em;}
 
-clb{color: var(--cl-blue);}
-clp{color: var(--cl-pink);}
+clb{color: var(--cl-blue);} /*para cambiar el color a azul*/
+clp{color: var(--cl-pink);} /*para cambiar el color a rosa*/
 
 /*-------------*/
 
-header, main, footer{
-    margin: 1em;
+html{
+    background-color: var(--cl-background);
+    scroll-behavior: smooth;
 }
 
+body{
+    width: clamp(320px, 100%, 1100px);
+}
+
+html, body{
+    margin: 0;
+    display: grid;
+    place-items: center;
+}
+
+header, main, footer, aside{
+    margin: 1em;
+    width: clamp(320px, 100%, 1100px);
+}
 
 /*header*/
 
 header{
-    position: relative;
-    top: 3em;
-    padding: 1em;
     text-align: center;
-    margin: 1em;
+    
+    div{
+        padding: 1em;
+        div{padding: 0;}
+    }
 }
 
 .title{
     background: var(--cl--bk-header);
     border-radius:0.5em;
-    margin:0;
     p{font-size: 0.75em;}
     h2{font-size: 2em;}
 }
@@ -103,22 +96,46 @@ header{
 /*aside where is the index*/
 
 aside{
-    position: absolute;
+    position: relative;
     top: 0;
+    border-radius: 0em 0em 0.5em 0.5em;
 
     padding: 1em;
-    width: 100%;
-    height: 4em;
+    margin: 0;
+    height: auto;
     background-color: var(--cl--bk-header);
 
     display: grid;
-    grid-auto-columns: repeat(2, 1fr);
-
-    nav{display: none;} /*esto es temporal*/
+    
+    div{padding: 0;}
+    
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
 
     .material-symbols-outlined{
         color: var(--cl-text);
+        font-size: 2em;
     }
+}
+
+nav{
+    position: absolute;
+    top: 6em;
+    z-index: 11;
+
+    display: none; /*display: grid;*/
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+
+    padding: 0.5em;
+
+    p{margin: 0.25em 0;}
+    
+    background: var(--cl--bk-header);
+    border-radius: 0.5em;
+    
+    a{color: var(--cl-text);}
+    
 }
 
 /*tables*/
@@ -154,27 +171,37 @@ section{
     padding: 1em;
     background: var(--cl-bk-main);
 
+    article{
+        margin: 0.5em 0;
+
+        div{margin: 0 0.5em;}
+    }
+
     article > p{
-        list-style-type: none;
         color: var(--cl-text);
-        font-family: OpenSans;
     }
 }
 
-/*pre*/
-
-pre{background: var(--cl-bk-code);
-    color: var(--cl-tx-code);
-    border-radius: 5px;
-    padding: 10px;
-    overflow: auto;
-    max-width: 700px;
-}
+/*images and pre*/
 
 img, pre{
     width: 100%;
     display: flex;
     margin: 0 auto;
+}
+
+img{
+    max-width: 250px;
+}
+
+pre{
+    background: var(--cl-bk-code);
+    color: var(--cl-tx-code);
+    border-radius: 0.5em;
+    padding: 1em;
+    
+    overflow: auto;
+    max-width: 700px;
 }
 
 /*iframe*/
@@ -197,25 +224,31 @@ iframe{
     padding: 1em;
 }
 
-/*images*/
+/*button to up*/
 
-img{
-    max-width: 250px;
+.up{
+    position:fixed;
+    bottom:2em;
+    right:2em;
+    background: var(--cl-bk-code);
+    width: 2.5em;
+    height: 2.5em;
+    border-radius: 50%;
+
+    .material-symbols-outlined{
+        font-size: 3em;
+    }
+}
+
+.up:hover{
+    background: var(--cl-bk-code);
+    transition: background 0.2s ease;
+
+    .material-symbols-outlined{
+        color: var(--cl-tx-code);
+        transition: color 0.2s ease;
+    }
 }
 
 /*IN PROCESS*/
-
-nav{column-count: 2;} /*esto dado que es solo para bloques de texto, hay que cambiarlo*/
-
-.nncc{column-count: 2;}
-
-.contenedor{width: 100%; display: flex; gap:20px; flex-wrap: wrap; margin-top: 10px;}
-.ctnwtcss{display: flex;width: calc(33.3% - 20px); flex-direction: column; position: relative;}
-
-.contact{border-radius: 50%; width: 50px;height: 50px; background: var(--cl-pre);box-shadow: 0px 5px 30px 0px var(--cl-shadow); position:absolute;top:6%;right:3%; display:flex; justify-content: center; align-items: center; color: var(--cl-text);img{width: 30px;height: 30px;filter: brightness(0) saturate(100%) invert(8%) sepia(47%) saturate(4406%) hue-rotate(231deg) brightness(100%) contrast(99%);}}
-
-ntpr{color:#6b1f1fde; background: #e2b3b373; border-radius: 20px; padding: 10px;font-weight: bold;  line-height: 50px;}
-.up{border-radius: 50%; width: 50px;height: 50px; background: var(--cl-pre); position:fixed;bottom:6%;right:3%; 
-    display:flex; justify-content: center; align-items: center; color: var(--cl-text);img{width: 30px;height: 30px;filter: brightness(0) saturate(100%) invert(8%) sepia(47%) saturate(4406%) hue-rotate(231deg) brightness(100%) contrast(99%);}}
-
-.up-ref{width: 2px; height: 2px; background: var(--cl-background); position:absolute; top:1px}
+.nncc{column-count: 2;} /*esto es de la sección 4, pero hay que modificarlo porque hay algo que no anda bien*/
