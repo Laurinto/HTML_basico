@@ -32,7 +32,6 @@
     font-family: 'OpenSans';
     src: url(FONTS/OpenSans-VariableFont.ttf) format("truetype");
 }
-
 @font-face {
     font-family: 'BebasNue';
     src: url(FONTS/BebasNeue-Regular.ttf) format("truetype");
@@ -119,7 +118,7 @@ aside{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
 
-    .material-symbols-outlined{
+    svg{
         color: var(--cl-text);
         font-size: 2em;
     }
@@ -242,7 +241,7 @@ iframe{
     height: 2.5em;
     border-radius: 50%;
 
-    .material-symbols-outlined{
+    svg{
         font-size: 3em;
     }
 }
@@ -251,7 +250,7 @@ iframe{
     background: var(--cl-bk-code);
     transition: background 0.2s ease;
 
-    .material-symbols-outlined{
+    svg{
         color: var(--cl-tx-code);
         transition: color 0.2s ease;
     }
