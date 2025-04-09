@@ -33,14 +33,14 @@
 
 /*text-style*/
 
-p{color: var(--cl-text); font-family: OpenSans;}
-li{color: var(--cl-text); font-family: OpenSans;}
+p{color: var(--cl-text); font-family: 'OpenSans';}
+li{color: var(--cl-text); font-family: 'OpenSans';}
 a{color:var(--cl-yellow); text-decoration: none;}
 
 h1, h2, h3, h4, h5{
     all:unset;
     color:var(--cl-text);
-    font-family: BebasNue;
+    font-family: 'BebasNue';
 }
 
 h1{font-size: 4em; letter-spacing: 0.01em;}
@@ -152,7 +152,7 @@ table{
 th, tr, td{
     padding:10px;
     border: 2px solid var(--cl-text);
-    font-family: OpenSans;
+    font-family: 'OpenSans';
     overflow: auto;
 }
 
