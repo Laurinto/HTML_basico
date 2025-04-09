@@ -28,25 +28,27 @@
     }
 }
 
-@font-face {
+/*@font-face {
     font-family: 'OpenSans';
     src: url(/FONTS/OpenSans-VariableFont.ttf) format("truetype");
 }
 @font-face {
     font-family: 'BebasNue';
     src: url(/FONTS/BebasNeue-Regular.ttf) format("truetype");
-}
+}*/
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
 /*text-style*/
 
-p{color: var(--cl-text); font-family: 'OpenSans';}
-li{color: var(--cl-text); font-family: 'OpenSans';}
+p{color: var(--cl-text); font-family: 'Open Sans';}
+li{color: var(--cl-text); font-family: 'Open Sans';}
 a{color:var(--cl-yellow); text-decoration: none;}
 
 h1, h2, h3, h4, h5{
     all:unset;
     color:var(--cl-text);
-    font-family: 'BebasNue';
+    font-family: 'Bebas Neue';
 }
 
 h1{font-size: 4em; letter-spacing: 0.01em;}
@@ -158,7 +160,7 @@ table{
 th, tr, td{
     padding:10px;
     border: 2px solid var(--cl-text);
-    font-family: 'OpenSans';
+    font-family: 'Open Sans';
     overflow: auto;
 }
 
