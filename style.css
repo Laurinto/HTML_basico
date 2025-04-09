@@ -30,11 +30,11 @@
 
 @font-face {
     font-family: 'OpenSans';
-    src: url(FONTS/OpenSans-VariableFont.ttf) format("truetype");
+    src: url(/FONTS/OpenSans-VariableFont.ttf) format("truetype");
 }
 @font-face {
     font-family: 'BebasNue';
-    src: url(FONTS/BebasNeue-Regular.ttf) format("truetype");
+    src: url(/FONTS/BebasNeue-Regular.ttf) format("truetype");
 }
 
 /*text-style*/
