@@ -1,16 +1,101 @@
 <!DOCTYPE html>
-<html lang="es-ES">
-    <head>
-        <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>HTML Básico</title>
-        <meta name="description" content="Bases para el entendimiento básico de HTML y CSS">
-        <meta property="og:title" content="HTML y CSS Básico">
+<html lang="es">
+<head>
+    <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Básico</title>
+    <link rel="stylesheet" href="css/style.css">
 
-        <link rel="stylesheet" href="style.css">
-        <link rel="icon" type="image/png" href="">
-    </head>
-    <body>
+</head>
+<body>
+    <header>
+        <h1>HTML Y CSS BÁSICO</h1>
+    </header>
+    <main>
         <aside>
+        <details open>
+            <summary><h2>Índice</h2></summary>
+            <ul>
+                <li>HTML</li>
+                <ul>
+                    <li>Introducción</li>
+                    <li>Creación del documento</li>
+                    <li></li>
+                    <li></li>
+                </ul>
+                <li>CSS</li>
+            </ul>
+        </details>
+        </aside>
+        <section>
+            <h2>HTML</h2>
+            <article>
+                <h3>Introducción</h3>
+                <p>HTML (HyperText Markup Language) es usado para estructurar el contenido web que usa etiquetas para categorizar texto en un navegador web.</p>
+                <p>En las etiquetas del lenguaje HTML, se pueden usar tanto mayúsculas como minúsculas y estas serán reconocidas igual, pues la sintaxis no diferencia entre ese tipo de caracteres. Pese a eso, lo más recomendable es usar minúsculas, pues es más cómodo y ordenado.</p>
+            </article>
+            <article>
+                <h3>Creación del documento</h3>
+                <p>Para escribir documentos HTML, deberemos crear un documento con extensión `.html`. Para la página principal, siempre hay que llamarla con el nombre `index.html`.</p>
+                <h4>¿Por qué usar `index.html`?</h4>
+                <p>El archivo `index.html` es un estándar establecido que facilita la navegación y la gestión de sitios web. Los servidores web tratan `index.html` como la página predeterminada en un directorio, lo que permite a los usuarios acceder fácilmente a la página principal sin tener que escribir el nombre completo del archivo en la URL.</p>
+            </article>
+            <article>
+                <details>
+                    <summary><h3>¿No sabes que programa usar?</h3></summary>
+                    <h4>Uso de Visual Studio Code</h4>
+                    <p>(...)</p>
+                    <!--CONTENIDO SECCIÓN OPCIONAL-->
+                </details>
+            </article>
+            <article>
+                <h3>Cabecera HTML 5</h3>
+                <p>Las cabeceras de HTML 5 (la versión actual del lenguaje) proporcionan información esencial sobre la página web. Introduciéndolo dentro de una etiqueta `<head>`, que incluye el `DOCTYPE` para indicar que es un documento HTML 5, el `charset` para especificar la codificación de caracteres `UTF-8`, y el `viewport` para adoptar el diseño a dispositivos móviles.</p>
+                <p>En la cabecera también se permite definir el título de la pestaña, vincular hojas de estilo (CSS) o iconos, y garantizar la compatibilidad con navegadores más antiguos. Estas cabeceras mejoran la accesibilidad, SEO y experiencia de usuario.</p>
+                <p>El aspecto básico que todo archivo HTML que debe tener es el siguiente:</p>
+                <pre>
+                    <!--CÓDIGO-->
+                </pre>
+            </article>
+            <article>
+                <h3>Estructura del cuerpo</h3>
+                <p>La estructura en HTML es bastante importante para mantener un orden y para que tanto nosotros como los demás puedan saber en qué parte del código estamos.</p>
+                <p>Aunque no sea obligatorio, pues hay páginas que usan muchos `div` o `span` para estructurar las páginas, el abuso de estos pueden dar a un código sucio y desordenado que para algunos podría llegar a ser ilegible, y por ello es mejor usar estas etiquetas sintácticas.</p>
+                <p>Para la estructura básica de la página:</p>
+                <ul>
+                    <li>`header`. Ahí es donde se encuentra el título de una sección, artículo, etc.</li>
+                    <li>`main` . Establece el contenido principal de esa página en concreto y es la que indicará el contenido cambiante en función de la web.</li>
+                    <li></li>
+                </ul>
+                <figure>
+                    <img src="assets/imgs/imagen-ejemplo.png" alt="">
+                </figure>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <p>2024-2026 Laurinto U.</p>
+        <section><!--redes-->
+            <svg></svg><!--laurinto.com-->
+            <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>GitHub</title><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+            <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Instagram</title><path d="M7.0301.084c-1.2768.0602-2.1487.264-2.911.5634-.7888.3075-1.4575.72-2.1228 1.3877-.6652.6677-1.075 1.3368-1.3802 2.127-.2954.7638-.4956 1.6365-.552 2.914-.0564 1.2775-.0689 1.6882-.0626 4.947.0062 3.2586.0206 3.6671.0825 4.9473.061 1.2765.264 2.1482.5635 2.9107.308.7889.72 1.4573 1.388 2.1228.6679.6655 1.3365 1.0743 2.1285 1.38.7632.295 1.6361.4961 2.9134.552 1.2773.056 1.6884.069 4.9462.0627 3.2578-.0062 3.668-.0207 4.9478-.0814 1.28-.0607 2.147-.2652 2.9098-.5633.7889-.3086 1.4578-.72 2.1228-1.3881.665-.6682 1.0745-1.3378 1.3795-2.1284.2957-.7632.4966-1.636.552-2.9124.056-1.2809.0692-1.6898.063-4.948-.0063-3.2583-.021-3.6668-.0817-4.9465-.0607-1.2797-.264-2.1487-.5633-2.9117-.3084-.7889-.72-1.4568-1.3876-2.1228C21.2982 1.33 20.628.9208 19.8378.6165 19.074.321 18.2017.1197 16.9244.0645 15.6471.0093 15.236-.005 11.977.0014 8.718.0076 8.31.0215 7.0301.0839m.1402 21.6932c-1.17-.0509-1.8053-.2453-2.2287-.408-.5606-.216-.96-.4771-1.3819-.895-.422-.4178-.6811-.8186-.9-1.378-.1644-.4234-.3624-1.058-.4171-2.228-.0595-1.2645-.072-1.6442-.079-4.848-.007-3.2037.0053-3.583.0607-4.848.05-1.169.2456-1.805.408-2.2282.216-.5613.4762-.96.895-1.3816.4188-.4217.8184-.6814 1.3783-.9003.423-.1651 1.0575-.3614 2.227-.4171 1.2655-.06 1.6447-.072 4.848-.079 3.2033-.007 3.5835.005 4.8495.0608 1.169.0508 1.8053.2445 2.228.408.5608.216.96.4754 1.3816.895.4217.4194.6816.8176.9005 1.3787.1653.4217.3617 1.056.4169 2.2263.0602 1.2655.0739 1.645.0796 4.848.0058 3.203-.0055 3.5834-.061 4.848-.051 1.17-.245 1.8055-.408 2.2294-.216.5604-.4763.96-.8954 1.3814-.419.4215-.8181.6811-1.3783.9-.4224.1649-1.0577.3617-2.2262.4174-1.2656.0595-1.6448.072-4.8493.079-3.2045.007-3.5825-.006-4.848-.0608M16.953 5.5864A1.44 1.44 0 1 0 18.39 4.144a1.44 1.44 0 0 0-1.437 1.4424M5.8385 12.012c.0067 3.4032 2.7706 6.1557 6.173 6.1493 3.4026-.0065 6.157-2.7701 6.1506-6.1733-.0065-3.4032-2.771-6.1565-6.174-6.1498-3.403.0067-6.156 2.771-6.1496 6.1738M8 12.0077a4 4 0 1 1 4.008 3.9921A3.9996 3.9996 0 0 1 8 12.0077"/></svg>
+        </section>
+    </footer>
+
+</body>
+</html>
+
+<!-- CÓDIGO PARA METER  DESPUÉS
+<meta name="description" content="Bases para el entendimiento básico de HTML y CSS">
+<meta property="og:title" content="HTML y CSS Básico">
+<link rel="icon" type="image/png" href="">
+-->
+
+
+<!--
+CÓDIGO ANTERIOR
+
+<aside>
             <div>
                 <p>Índice</p>
             </div>
@@ -183,8 +268,6 @@
 
             <p><clp>&lt;a</clp> <a>href="documento.html#loquesea"</a><clp>&gt;</clp>Enlace a una parte de un documento<clp>&lt;/a&gt;</clp><br>En este tipo de enlaces en los que se <a>usa # para enlazar</a> ese elemento <a href="#enl">con otra parte de la página</a>, <a>añadiremos a la etiqueta</a> en la que queremos redirigir <a>&lt;id=”...”./a&gt;</a> Este parámetro hace que pueda ser identificado por otras etiquetas siempre que estas quieran hacer referencia a este, por lo que a la hora de presionar el link, redirige a esa parte de la web en la que se encuentra el id.</p>
             
-            <!--Falta un CodePen-->
-
             </section>
 
             <section id="sec6">
@@ -193,7 +276,7 @@
             <p><clb>Los elementos</clb> en ambos tipos de la lista <clb>se definen con</clb> el elemento <clp>&lt;li&gt;</clp>.</p>
             <p>El elemento ul puede anidarse dentro de otro elemento ul para crear listas multinivel. Además, puede combinarse con el elemento ol para crear listas ordenadas y desordenadas mixtas.</p>
             
-                <!--Falta un CodePen-->
+
 
             </section>
 
@@ -211,7 +294,6 @@
                 <h2>&lt;summary&gt; + &lt;details&gt;</h2>
                 <p>Se usa para <clb>crear secciones en las que al dar clic en el título <clp>&lt;summary&gt;</clp> de la sección, la información</clb> que se encontraba oculta, <clb>se muestra</clb>.</p>
                 
-                <!--Falta un CodePen-->
 
             </section>
 
@@ -266,7 +348,7 @@
             <hr>
             <h4>Ejemplo:</h4>
             
-                <!--Falta un CodePen-->
+
             
             </section>
 
@@ -276,18 +358,15 @@
                 <p>Unos ejemplos de distintos fondos son:</p>
                 <hr>
                 <h4>Fondo de un color</h4>
-               
-                <!--Falta un CodePen-->
 
                 <hr>
                 <h4>Fondo con una imagen</h4>
-                
-                <!--Falta un CodePen-->
+            
 
                 <hr>
                 <h4>Fondo con degradado</h4>
                 
-                <!--Falta un CodePen-->
+            
 
             </section>
 
@@ -295,8 +374,7 @@
             <h2>Fuentes para el texto</h2>
             <p>Estos estilos se usan <clb>para el texto</clb>. Les puedes asignar una variedad bastante inmensa de estilos por la cantidad inmensa de etiquetas que existen, pero he aquí unos ejemplos:</p>
             
-            <!--Falta un CodePen-->
-            
+
             </section>
 
             <section id="sec14">
@@ -315,8 +393,8 @@
                 <span>See the Pen <a href="https://codepen.io/Laurinto/pen/jOgQbVz">
                 Ejemplo del box model</a> by Laurinto (<a href="https://codepen.io/Laurinto">@Laurinto</a>)
                 on <a href="https://codepen.io">CodePen</a>.</span>
-              </p>
-              <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+            </p>
+            <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
             <hr>
             <p>La mejor forma de comprender esta función es entrando a una página web cualquiera, dar clic derecho y seleccionar el apartado de "Inspeccionar". Verás a la derecha una sección, en la que aparece todo el código fuente de la página junto a un recuadro de una sección llamada "Computed", a la derecha o debajo del código HTML (en función del tamaño de la pantalla que tengais), que te señalará las distintas partes del box model.</p>
             </section>
@@ -402,9 +480,7 @@ position: sticky;   /*pegada*/
             <hr>
             <h4>Ejemplo:</h4>
             
-            <!--Falta un CodePen-->
-              
-              <hr>
+            <hr>
             <hr>
             <h4>Practica con el ejemplo:</h4>
             <p>Copia el código que se encuentra en el <a href="IMAGES/pdf-ej-positions.pdf">enlace</a>, empieza a jugar con el código probando las distintas posiciones y propiedades que hay, y describe en un documento a parte lo que creees que ha cambiado.</p>
@@ -415,19 +491,14 @@ position: sticky;   /*pegada*/
             <h2>Creación de figuras geometricas</h2>
             <h5>Cuadrado y rectángulo</h5>
             
-                <!--Falta un CodePen-->
-
             <h5>Círculo</h5>
             
-                <!--Falta un CodePen-->
 
             <h5>Triangulo</h5>
             
-                <!--Falta un CodePen-->
+
 
             <h5>Rombo</h5>
-           
-            <!--Falta un CodePen-->
 
             </section>
             <section id="sec17">
@@ -446,7 +517,7 @@ position: sticky;   /*pegada*/
                 </tr>
             </table>
 
-            <!--Falta un CodePen-->
+           
 
             </section>
 
@@ -455,7 +526,7 @@ position: sticky;   /*pegada*/
             <p>Sabiendo la propiedad :hover, cabe destacar que existe la opción de destacar estos elementos mediante transiciones que pueden durar un tiempo definido. La principal forma de hacerlo es mediante la propiedad.</p>
             <p>He aquí un ejemplo con el ejemplo de :hover</p>
             
-                <!--Falta un CodePen-->
+              
 
             </section>
 
@@ -463,7 +534,7 @@ position: sticky;   /*pegada*/
             <h2>Creación de botones con &lt;button&gt;</h2>
             <p>&lt;button&gt; es una etiqueta que se usa para la representación de un botón. Al mostrarse sin estilo tiene una presentación así:</p>
             
-                <!--Falta un CodePen-->
+              
 
               <p>Por defecto tendrá su propio hover, pero a la hora de empezar a darle unas propiedades en específico ya desaparecerá.</p>
             </section>
@@ -473,11 +544,7 @@ position: sticky;   /*pegada*/
                 <p>&lt;input&gt; es una etiqueta que se usa para crear diversos controles interactivos. Cada una de estos controles se pueden declarar su forma poniendo type=”...” dentro de la etiqueta.</p>
                 <p>He aquí unas muestras de las posibilidades que se le puede dar:</p>
 
-                <!--Falta un CodePen-->
-
                 <p>La etiqueta <textarea> tiene un mismo fin que algunos tipos de input, pero la parte que diferencia esta etiqueta con la otra es que se trata de un área de texto extensible cuyo fin único es insertar texto independientemente de la temática.</p>
-            
-                    <!--Falta un CodePen-->
 
             </section>
         </main>
@@ -485,5 +552,5 @@ position: sticky;   /*pegada*/
         <footer>
             <p>2025 - Laura U.</p>
         </footer>
-    </body>
-</html>
+
+-->

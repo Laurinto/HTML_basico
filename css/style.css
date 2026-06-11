@@ -1,0 +1,155 @@
+:root{
+    --cl-1:#1B2CC1;
+    --cl-2:#7692FF;
+    --cl-3:#eff5fa;
+    --cl-4:#091540;
+    --cl-5:#ABD2FA;
+
+    /*des-saturar estos colores*/
+    --cl-amarillo:#FCCA46;
+    --cl-naranja: #FE7F2D;
+    --cl-rosa: #FF595E;
+    --cl-verde: #8AC926;
+
+    @media (prefers-color-scheme: dark) {
+        --cl-1:#7692FF;
+        --cl-2:#2d368b;
+        --cl-3:#091540;
+        --cl-4:#eff5fa;
+        --cl-5:#ABD2FA;
+
+        
+    }
+}
+
+@font-face {
+    font-family: 'Asap';
+    src: url(../assets/fonts/Asap-VariableFont_wdth\,wght.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    background: var(--cl-3);
+    font-family: 'Asap';
+    color: var(--cl-4);
+}
+
+/*HEADER*/
+header{
+    text-align: center;
+    width: 100%;
+}
+
+header, footer{
+    background: var(--cl-1);
+    padding: 0.25em;
+    color: var(--cl-3);
+}
+
+/*MAIN*/
+main{
+    padding: 2em;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    gap: 1em;
+    margin: 0 auto;
+    width: auto;
+
+    section{
+        max-width: 1100px;
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+    }
+    article{
+        border: 2px solid var(--cl-2);
+        border-radius: 0.75em;
+        padding: 1em;
+        /*position: sticky;*/
+    }
+    summary{
+        list-style: none;
+    }
+}
+
+/*aside*/
+aside{
+    padding: 0 0 1em;
+
+    details{
+        border-right: 2px solid var(--cl-5);
+        min-width: 150px;
+        max-width: 300px;
+        position: sticky;
+        top: 2em;
+    }
+    summary{
+        display: none;
+    }
+}
+
+/*FOOTER*/
+footer{
+    padding: 1em;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    display: grid;
+    grid-template-rows: 2;
+    justify-content: center;
+
+    section{
+        display: flex;
+        justify-content: center;
+        gap: 1em;
+        padding: 0.5em 0 0;
+        border-top: 1px solid var(--cl-3);
+    }
+    p{
+        font-size: 0.75em;
+        padding-bottom: 0.5em;
+    }
+    svg:hover{
+        color: var(--cl-2);
+    }
+}
+
+/*OTROS*/
+svg{
+    fill: currentColor;
+    width: 1em;
+    height: 1em;
+    transition: color 0.2s;
+}
+
+img{ /*provisional*/
+    width: 200px;
+    height: 200px;
+}
+
+summary:hover{
+    cursor: pointer;
+}
+
+/*PANTALLA*/
+@media screen and (max-width: 900px) { /*PARA TABLET Y MÓVIL*/
+    main{
+        grid-template-columns: 1fr;
+    }
+    main aside{
+        border-bottom: 2px solid var(--cl-5);
+    }
+    main details{
+        max-width: none;
+        border-right: none;
+        
+    }
+    main summary{
+        display: block;
+    }
+}
